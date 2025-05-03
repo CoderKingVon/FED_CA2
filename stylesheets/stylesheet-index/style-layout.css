@@ -1,0 +1,235 @@
+/*
+==============================
+            Fix 
+==============================
+*/
+/* To Fix Broken Designs if bs5 dont work */
+
+/* Large (Desktops) */
+@media only screen and (min-width: 992px) {
+
+  /* Body */
+
+  /* Fix the scrolling offset with the fixed navbar accounted for */
+  html {
+  scroll-padding-top: 70px;
+  }
+
+  /* Navbar Container */
+  #navbar-container {
+    border-bottom-style: solid;
+    border-color: white;
+    border-width: 2px;
+  }
+
+  /* Landing Page */
+  #Landing-Page-BG {
+    height: 100dvh;
+  }
+
+  /* History Page */
+  #History-Page-Inner-Container {
+    width: 75%;
+  }
+
+  /* For All Ages Page */
+  #For-All-Ages-Inner-Container {
+    width: 75%;
+  }
+
+  /* Celebration Page */
+  #Celebration-Page-BG {
+    height: 100dvh;
+  }
+
+  #Celebration-Page2-Inner-Container {
+    width: 75%;
+  }
+
+  /* Quiz Page */
+  #Quiz-Page-Header {
+    height: 20dvh;
+  }
+
+  #Quiz-Page {
+    width: 75%;
+  }
+
+  /* SP News Page */
+  #SP-News-Page {
+    width: 75%;
+  }
+}
+
+/* Medium (Tablets) */
+@media only screen and (768px <= width < 992px) {
+
+  /* Body */
+
+  /* Fix the scrolling offset with the fixed navbar accounted for */
+  html {
+    scroll-padding-top: 70px;
+  }
+  /* Navbar Container*/
+  #navbar-container {
+    border-bottom-style: solid;
+    border-color: white;
+    border-width: 2px;
+  }
+
+  /* Landing Page */
+  #Landing-Page-BG {
+    height: 80dvh;
+  }
+
+  /* History Page */
+  #History-Page-Inner-Container {
+    width: 75%;
+  }
+
+  /* For All Ages Page */
+  #For-All-Ages-Inner-Container {
+    width: 75%;
+  }
+
+  /* Celebration Page */
+  #Celebration-Page-BG {
+    height: 80dvh;
+  }
+
+  #Celebration-Page2-Inner-Container {
+    width: 75%;
+  }
+
+  /* Quiz Page */
+
+  #Quiz-Page-Header {
+    height: 20dvh;
+  }
+
+  #Quiz-Page {
+    width: 75%;
+  }
+
+  /* SP News Page */
+  #SP-News-Page {
+    width: 75%;
+  }
+
+}
+
+/* Small (Mobile) */
+@media only screen and (0px <= width < 768px) {
+  /* Body */
+
+  /* Navbar Container*/
+  #navbar-container {
+    border-bottom-style: none;
+  }
+
+  /* Landing Page */
+  #Landing-Page-BG {
+    height: 70dvh;
+  }
+
+  /* History Page */
+  #History-Page-Inner-Container {
+    width: 100%;
+  }
+  /* For All Ages Page */
+  #For-All-Ages-Inner-Container {
+    width: 100%;
+  }
+
+  /* Celebration Page */
+  #Celebration-Page-BG {
+    height: 70dvh;
+  }
+
+  #Celebration-Page2-Inner-Container {
+    width: 100%;
+  }
+
+
+  /* Quiz Page */
+
+  #Quiz-Page-Header {
+    height: 20dvh;
+  }
+  
+  #Quiz-Page {
+    width: 100%;
+  }
+
+  /* SP News Page */
+  #SP-News-Page {
+    width: 100%;
+  }
+}
+
+/*
+==============================
+            Body 
+==============================
+*/
+
+/* Landing Page */
+#Landing-Page-BG {
+  position: relative;
+
+  background-image: 
+  linear-gradient(45deg, rgba(49, 48, 48, 0.652), rgba(23, 23, 23, 0.542)), 
+  url("../../images/images-Index/Content-Landing-Page_Singapore_Poly_Campus.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+/* History Page */
+
+/* For All Ages */
+#For-All-Ages {
+  color: white;
+  background-color: rgb(249, 52, 52);
+}
+
+/* Celebration Page */
+#Celebration-Page-BG {
+  position: relative;
+  display: block;
+
+  background-image: 
+  linear-gradient(45deg, rgba(49, 48, 48, 0.827), rgba(23, 23, 23, 0.778)), 
+  url("../../images/images-Index/Content-Celebration-Page-BG.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Quiz Page */
+#Quiz-Page-Header {
+  position: relative;
+  display: block;
+
+  background-image: url("../../images/images-Index/Quiz-Page-Header.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* SP Anniversary Countdown Page */
+#SP-Anniversary-Countdown-Page {
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.634)),
+  url("../../images/images-Index/SP_Annivesary-Countdown-BG.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*
+==============================
+            Footer
+==============================
+*/

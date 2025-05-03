@@ -1,0 +1,263 @@
+/*
+==============================
+            Fix 
+==============================
+*/
+/* To Fix Broken Designs if bs5 dont work */
+
+/* Large (Desktops) */
+@media only screen and (min-width: 992px) {
+
+    /* Navbar */
+
+    #Navbar-Bottom-Right {
+        display: flex;
+    }
+
+    /* Body */
+
+    /* Landing Page Bg*/
+}
+
+/* Medium (Tablets) */
+@media only screen and (768px <= width < 992px) {
+
+    /* Navbar */
+
+    #Navbar-Bottom-Right {
+        display: flex;
+    }
+
+    /* Body */
+
+}
+
+/* Small (Mobile) */
+@media only screen and (0px <= width < 768px) {
+
+    /* Navbar */
+  
+    #navbar-indicators {
+        display: none;
+    }
+
+    #navbar-sidebar-button {
+        position: fixed;
+        bottom: 1vh;
+        left: 1vw;
+        border-radius: 50%;
+        width: 10dvw;
+        height: 10dvw;
+
+        background-color: rgb(28, 223, 226);
+
+        z-index: 100;
+    }
+
+    #Navbar-Bottom-Right {
+        display: none;
+    }
+    
+
+    /* Body */
+}
+
+/*
+==============================
+            Navbar 
+==============================
+*/
+
+
+/*
+==============================
+            Body 
+==============================
+*/
+/* Navbar */
+
+button#caret {
+    border : none;
+    background : none;
+    position: absolute;
+    top: -2px;
+    right: 5px;
+    color: black;
+  }
+  
+.input-wrap {
+    position: relative;
+    display: inline;
+}
+
+#Font-Size-Default, #Font-Size-Large, #Font-Size-Larger, #Font-Size-Default2 , #Font-Size-Large2, #Font-Size-Larger2 {
+    color: white;
+    
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+}
+
+#Font-Size-Default, #Font-Size-Default2 {
+    font-size: 16px;
+}
+
+#Font-Size-Large, #Font-Size-Large2 {
+    font-size: 18px;
+}
+
+#Font-Size-Larger, #Font-Size-Larger2 {
+    font-size: 20px;
+}
+
+#Font-Size-Default, #Font-Size-Default2, #Font-Size-Default:hover, #Font-Size-Large:hover, #Font-Size-Larger:hover, 
+#Font-Size-Default2:hover , #Font-Size-Large2:hover, #Font-Size-Larger2:hover{
+    color: #d8394e;
+}
+
+#Navbar-Bottom-Right {
+    position: fixed;
+
+    flex-direction: column;
+    justify-content: space-between;
+    height: 27dvh;
+
+    z-index: 9999;
+    bottom: 2dvh;
+    right: 2dvw;
+
+}
+
+.Navbar-Bottom-Right-Icons:hover {
+    filter: brightness(120%);
+    transform: skew(2deg);
+}
+
+#Navbar-Bottom-Right a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8dvh;
+    width: 8dvh;
+
+    border-radius: 50%;
+}
+
+#Navbar-Bottom-Right a img {
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+
+    height: 8dvh;
+}
+
+#Forms-Modal-Message {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar-indicators a {
+    font-size: 110%;
+}
+
+/* Will change to display flex if scroll past a certain value (1000px) and if on mobile*/
+#Scroll-Button-Top {
+    display: none;
+    position: fixed;
+    bottom: 1dvh;
+    right: 2dvw;
+
+    z-index: 9999;
+
+    height: 6dvh;
+    width: 6dvh;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: red;
+    font-size: 2em;
+}
+
+#Scroll-Button-Top:hover {
+    background-color: rgba(255, 51, 0, 0.615);
+}
+
+
+/* Form */
+#first_name, #last_name, #email, #phone_number, #education, #region, #TOS, #message {
+    border-style: solid;
+    border-width: 3px;
+}
+
+
+/*
+==============================
+            Footer 
+==============================
+*/
+#Singapore-Poly-Logo-Footer {
+    height: 60px;
+}
+
+#Footer {
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#footer-facebook-icon {
+    color: white;
+    text-decoration: none;
+}
+#footer-facebook-icon:hover {
+    color: #1877F2;
+    text-shadow: 0.5px 0.5px 20px #1877F2;;
+}
+
+
+#footer-instagram-icon {
+    background-size: cover;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+#footer-instagram-icon:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    text-shadow: 0.5px 0.5px 20px #d6249f;
+}
+
+#footer-youtube-icon {
+    color: white;
+    text-decoration: none;
+}
+#footer-youtube-icon:hover {
+    color: #b2071d;
+    text-shadow: 0.5px 0.5px 20px #b2071d;
+}
+
+
+#footer-linkedin-icon {
+    color: white;
+    text-decoration: none;
+}
+#footer-linkedin-icon:hover {
+    color: #0072b1;
+    text-shadow: 0.5px 0.5px 20px #0072b1;
+}
+
+
+#footer-telegram-icon {
+    color: white;
+    text-decoration: none;
+}
+#footer-telegram-icon:hover {
+    color: #24A1DE;
+    text-shadow: 0.5px 0.5px 20px #24A1DE;
+}
+
+
+#footer-mobile-icon {
+    color: white;
+    text-decoration: none;
+}
+#footer-mobile-icon:hover {
+    color: grey;
+}

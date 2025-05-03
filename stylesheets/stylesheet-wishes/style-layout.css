@@ -1,0 +1,105 @@
+/*
+==============================
+            Fix 
+==============================
+*/
+/* To Fix Broken Designs if bs5 dont work */
+
+/* Large (Desktops) */
+@media only screen and (min-width: 992px) {
+
+    /* Navbar */
+    /* Navbar Container */
+    #navbar-container {
+        border-bottom-style: solid;
+        border-color: white;
+        border-width: 2px;
+    }
+    /* Body */
+
+    /* Landing Page Bg*/
+    #Landing-Page-BG {
+        height: 100dvh;
+    }
+
+    /* Forms Page */
+    #Forms-Page-Inner-Container {
+        width: 65%;
+    }
+
+    /* TOS PAGE */
+    #Terms-Of-Service-Page {
+        width: 75%;
+    }
+}
+
+/* Medium (Tablets) */
+@media only screen and (768px <= width < 992px) {
+
+    /* Navbar */
+    /* Navbar Container */
+    #navbar-container {
+        border-bottom-style: solid;
+        border-color: white;
+        border-width: 2px;
+    }
+
+    /* Body */
+    /* Landing Page */
+    #Landing-Page-BG {
+        height: 80dvh;
+    }
+
+    /* Forms Page */
+    #Forms-Page-Inner-Container {
+        width: 65%;
+    }
+
+    /* TOS PAGE */
+    #Terms-Of-Service-Page {
+        width: 75%;
+    }
+}
+
+/* Small (Mobile) */
+@media only screen and (0px <= width < 768px) {
+
+    /* Navbar */
+    /* Navbar Container */
+    #navbar-container {
+        border-bottom-style: none;
+    }
+
+    /* Body */
+
+    /* Landing Page */
+    #Landing-Page-BG {
+        height: 70dvh;
+    }
+
+    /* Forms Page */
+    #Forms-Page-Inner-Container {
+        width: 80%;
+    }
+
+    /* TOS PAGE */
+    #Terms-Of-Service-Page {
+        width: 100%;
+    }
+}
+
+/* Body */
+
+/* Fix the scrolling offset with the fixed navbar accounted for */
+html {
+    scroll-padding-top: 70px;
+}
+
+/* Landing Page */
+#Landing-Page-BG {
+    background-image: url("../../images/images-wishes/Landing-Page-BG.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

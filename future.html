@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <meta charset = "UTF-8">
+
+        <!-- CDN For Bootstap 5-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+        <!--Custom Favicon and Stylesheets and Scripts-->
+        <link rel = "icon" href = "images/images-shared/Navbar-Singapore_Poly_Logo.jpg">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">        
+        <link rel = "stylesheet" href = "stylesheets/stylesheet-future/style-content.css">
+        <link rel = "stylesheet" href = "stylesheets/stylesheet-future/style-layout.css">
+        <script defer src = "scripts/script-future.js"></script>
+
+        <!--Website title-->
+        <title>SP 70 | Future Plans</title>
+    </head>
+    <body data-bs-spy = "scroll" data-bs-target = ".scrollbar-menu" 
+    data-bs-theme = "light" id = "body">
+        <nav class = "navbar navbar-expand-xxl navbar-dark bg-dark">
+            <div class = "container-xxl pb-3" id = "navbar-container">
+                <div class = "navbar-brand w-50">
+                    <a href = "https://www.sp.edu.sg/" target = "_blank">
+                        <img src = "images/images-shared/Navbar-Footer-Singapore-Poly-Brand.png" 
+                        alt = "SP Brand"
+                        class = "img-responsive w-50">
+                    </a>
+                    <a href = "https://www.sp.edu.sg/sp70" target = "_blank">
+                        <img src = "images/images-shared/Navbar-Singapore_Poly_70_Anniversary_Brand.png" 
+                        alt = "SP 70 Brand"
+                        class = "img-responsive w-50">
+                    </a>
+                    </div>
+
+                <button type = "button" 
+                class = "navbar-toggler" 
+                data-bs-toggle = "collapse" 
+                data-bs-target = "#navbar-menu">
+                <span class = "navbar-toggler-icon"></span>
+                </button>
+
+                <div class = "navbar-collapse collapse" id = "navbar-menu">
+                <ul class = "navbar-nav">
+                    <li class = "nav-item">
+                        <a href = "index.html" class = "nav-link">Anniversary</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "future.html" class = "nav-link active">Future</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "wishes.html" class = "nav-link">Wishes</a>
+                    </li>
+                </ul>
+
+                <ul class = "navbar-nav ms-auto">
+                    <li class = "nav-item pe-2">
+                        <form>
+                            <div class="form-check form-switch mb-3">
+                                <label class="form-check-label text-white" id = "darkModeSwitchInfo">Light Mode</label>
+                                <input class="form-check-input" type= "checkbox" 
+                                id="darkModeSwitch" name="darkmode" >
+                              </div>
+                        </form>
+                    </li>
+                    <li class = "nav-item">
+                        <button type = "button" class = "bg-light float-start border-end-1 border-light" id = "Navbar-Keyword-Search-Button">
+                            <span>&#128270;</span>
+                        </button>
+                        <div class = "input-wrap">
+                            <input type = "search" placeholder="Search..." id = "userSearchInput" 
+                            class = "bg-light text-bg-light border-2 border-light" list = "Keywords-List">
+                            <button id="caret"> &#9660;</button>
+                        </div>
+                        <datalist id = "Keywords-List">
+                            <option value = "Introduction-Page">Overview</option>
+                            <option value = "Future-Plan">Sustainability Matters</option>
+                            <option value = "Future-Plan2">Our Pledge</option>
+                            <option value = "SP-News-Page">News</option>
+                            <option value = "Sharing-Page">Share With Us</option>
+                        </datalist>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+        <nav class = "navbar navbar-expand bg-dark 
+        navbar-dark sticky-top p-3 shadow-lg scrollbar-menu" 
+        id = "navbar-indicators">
+            <div class = "container-xl">
+                <ul class = "navbar-nav">
+                    <li class = "nav-item">
+                        <a href = "#Introduction-Page" class = "nav-link">Overview</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "#Future-Plan" class = "nav-link">Sustainability Matters</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "#Future-Plan2" class = "nav-link">Our Pledge</a>
+                    </li>
+
+                    <li class = "nav-item">
+                        <a href = "#SP-News-Page" class = "nav-link">News</a>
+                    </li>
+
+                    <li class = "nav-item">
+                        <a href = "#Sharing-Page" class = "nav-link">Sharing</a>
+                    </li>
+                </ul>
+                <ul class = "navbar-nav ms-auto">
+                    <li class = "nav-item text-light">
+                        <button id = "Font-Size-Default">A</button>
+                        <button id = "Font-Size-Large">A</button>
+                        <button id = "Font-Size-Larger">A</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id = "Navbar-Bottom-Right">
+            <a href = "index.html" class = "Navbar-Bottom-Right-Icons">
+                <img src = "images/images-shared/Navbar-Bottom-Right-Anniversary.png" alt ="">
+            </a>
+            <a href = "future.html" class = "Navbar-Bottom-Right-Icons">
+                <img src = "images/images-shared/Navbar-Bottom-Right-Future.jpg" alt ="">
+            </a>
+            <a href = "wishes.html" class = "Navbar-Bottom-Right-Icons">
+                <img src = "images/images-shared/Navbar-Bottom-Right-Wishes.png" alt = "">
+            </a>
+        </div>
+
+        <!-- Sidebar Button if viewed on mobile -->
+        <button class = "d-md-none text-dark border border-light" 
+        id = "navbar-sidebar-button" data-bs-toggle = "offcanvas" 
+        data-bs-target = "#navbar-indicator-sidebar">></button>
+
+        <!-- Sidebar Contents-->
+        <!-- data-bs-scroll allows users to scroll even if the sidebar is opened -->
+        <div class = "offcanvas offcanvas-md w-50 offcanvas-start text-bg-dark" 
+        data-bs-scroll = "true" 
+        id = "navbar-indicator-sidebar">
+            <div class = "offcanvas-header mt-3">
+                <div class = "offcanvas-title">
+                    <h1>Contents</h1>
+                </div>
+                <button class = "btn-close btn-close-white float-end" data-bs-dismiss = "offcanvas"></button>
+            </div>
+
+            <div class = "offcanvas-body scrollbar-menu">
+                <ul class = "nav nav-tabs d-flex flex-column gap-2 border-bottom-0">
+                    <li class = "nav-item">
+                        <a href = "#Introduction-Page" class = "nav-link text-bg-dark">Overview</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "#Future-Plan" class = "nav-link text-bg-dark">Sustainability Matters</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "#Future-Plan2" class = "nav-link text-bg-dark">Our Pledge</a>
+                    </li>
+
+                    <li class = "nav-item">
+                        <a href = "#SP-News-Page" class = "nav-link text-bg-dark">News</a>
+                    </li>
+
+                    <li class = "nav-item">
+                        <a href = "#Sharing-Page" class = "nav-link text-bg-dark">Sharing</a>
+                    </li>
+
+                    <li class = "nav-item text-center border-top border-light mt-3">
+                        <button id = "Font-Size-Default2">A</button>
+                        <button id = "Font-Size-Large2">A</button>
+                        <button id = "Font-Size-Larger2">A</button>
+                    </li>
+                </ul>
+
+                <h6 class = "mt-2 mb-4">Navigation</h6>
+                <ul class = "nav nav-tabs d-flex flex-column gap-2 mt-2 border-0">
+                    <li class = "nav-item">
+                        <a href = "index.html" class = "nav-link text-bg-dark">Anniversary</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "future.html" class = "nav-link active text-bg-dark">Future</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "wishes.html" class = "nav-link text-bg-dark">Wishes</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <button id = "Scroll-Button-Top" class = "text-white d-md-none"><i class="bi bi-arrow-bar-up text-center"></i></button>
+
+        <div class = "container-fluid" id = "Landing-Page-BG">
+
+            <div class = "container-md d-flex align-items-center justify-content-center h-100" id = "Landing-Page-Inner-Container">
+                <div>
+                    <h1 class = "text-light display-1 text-center" 
+                    id = "Content-Landing-Page-Title"><span id = "Content-Landing-Page-Title2"></span></h1>
+                    <h3 class = "text-light text-center" id = "Landing-Page-Subtitle">
+                        Find out more about on the details what SP is going to do in the future!
+                    </h3>
+                </div>
+            </div>
+        </div>
+
+        <div class = "container-fluid mt-5" id = "Introduction-Page">
+            <div class = "container-md">
+                <div class = "row gy-3">
+                    <div class = "col-lg-4 col-md-6 col-sm-12">
+                        <h2 class = "text-center">Our Plans & Progress</h2>
+                        <p class = "mt-3">In this page, you can find what Singapore Polytechnic as an 
+                            institute plans to do. Additionally, you can see our progress in our said plans 
+                            in this page!
+                        </p>
+
+                        <img src = "images/images-future/Content-Introduction-Page-Progress-Graph.png" 
+                        class = "w-100"
+                        alt = "Progress Graph">
+                    </div>
+                    <div class = "col-lg-4 col-md-6 col-sm-12">
+                        <div class = "card h-100">
+                            <img src = "images/images-future/Content-Introduction-Page-Future-Plans.webp" 
+                            alt = "Plant"
+                            height = "230" class = "card-img-top">
+                            <div class = "card-header">
+                                <div class = "card-title text-center">
+                                <h3>Future Plans</h3>
+                                </div>
+                            </div>
+                            <div class = "card-body bg-body-tertiary">
+                                <div class = "card-subtitle">
+                                    <p>Singapore Poly believes that sustainability matters significantly.</p>
+                                    <p>Singapore Poly believes in creating safe and green spaces for the well-being of
+                                        our community. SP aims to reduce greenhouse emissions by enormous amount.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class = "card-footer">
+                                <a class = "btn btn-info float-end" href = "#Future-Plan-Header">
+                                    Find More >
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "col-lg-4 col-md-6 col-sm-12">
+                        <div class = "card h-100">
+                            <img src = "images/images-future/Content-Introduction-Page-Progress.jpg" 
+                            alt = "Progress Graph"
+                            class = "card-img-top"  height="230">
+                            <div class = "card-header">
+                                <div class = "card-title text-center">
+                                <h3>Progress</h3>
+                                </div>
+                            </div>
+                            <div class = "card-body bg-body-tertiary">
+                                <div class = "card-subtitle">
+                                    <p>Singapore Poly has planned out a lot in the future, with the main focus being sustanability.
+                                        We also have have made progress and put in efforts in our plans.
+                                    </p>
+                                    <p>You can find out how much progress we have achieved in our plans below!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class = "card-footer">
+                                <a class = "btn btn-info float-end" href = "#SP-News-Page">
+                                    Find More >
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "container-fluid mt-5 d-flex align-items-center justify-content-center" id = "Future-Plan-Header">
+            <div class = "cotainer-md">
+                <h1 class = "display-1 text-white text-center">Sustainability Matters</h1>
+            </div>
+        </div>
+        <div class = "container-fluid mt-5" id = "Future-Plan">
+            <div class = "container-md" id = "Future-Plan-Inner-Container">
+                <h1 class = "text-center my-3">From Pledges to Progress</h1>
+                <p> SP’s 60-30 Vision is to reduce our greenhouse gas emissions by 60% by 2030, from the baseline year of 2022.</p>
+                    
+                <p>More information can be found in our inaugural Environmental Sustainability Disclosure for Financial Year 2022. 
+                    We hope this disclosure will serve as a useful reference for other organisations, and see this as fulfilling our 
+                    calling as one of Singapore’s leading Institutes of Higher Learning
+                </p>
+
+                <div class = "row d-flex justify-content-center my-5">
+                    <div class = "col-lg-6 col-md-8 col-sm-12">
+                        <div class = "card">
+                            <img src = "images/images-future/Content-Future-Plans-Sustainability-Disclosure.png" 
+                            alt = "">
+                            <div class = "card-header">
+                                <div class = "card-title text-center">
+                                    <h1>The Plan</h1>
+                                </div>
+                            </div>
+
+                            <div class = "card-body bg-body-tertiary">
+                                <div class = "card-subtitle">
+                                    <p>Disclosures are for Financial Year 2022, i.e. 1 April 2022
+                                        to 31 March 2023. No external assurance has been
+                                        sought for this disclosure.
+                                    </p>
+
+                                    <p>
+                                        We welcome suggestions or feedback to help
+                                        us improve our subsequent disclosures. You
+                                        can reach out to SP’s Sustainability Office at
+                                        <a href = "mailto:sustainability_office@sp.edu.sg">sustainability_office@sp.edu.sg.</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class = "card-footer">
+                                <a class = "btn btn-info float-end" 
+                                href = "https://www.sp.edu.sg/docs/default-source/default-document-library/sp-environmental-sustainability-disclosure-fy2022.pdf?sfvrsn=6a57c911_3" 
+                                target = "_blank">
+                                    Find More >
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class = "container-fluid d-flex align-items-center justify-content-center" id = "Future-Plan-Header2">
+            <div class = "container-md">
+                <h1 class = "text-white display-1 text-center">Our Pledge</h1>
+            </div>
+        </div>
+
+        <div class = "container-fluid mt-5">
+            <div class = "container-md w-50" id = "Future-Plan-Inner-Container-2-1">
+                <h3 class = "text-center">In Our Words:</h3>
+                <h1 class = "text-center" id = "Future-Plan2-Pledge">
+                    We pledge to green our
+                    campus, reduce our environmental
+                    impact and nurture stewards
+                    of sustainability
+                </h1>
+            </div>
+        </div>
+
+        <div class = "container-fluid" id = "Future-Plan2">
+            <div class = "container-md" id = "Future-Plan-Inner-Container-2-2">
+                <h1 class = "mt-5 mb-3">Our Community In Action</h1>
+                <p>Learn more about SP’s sustainability journey and our collective commitment to reducing impact on the 
+                    environment we live in. In 2023, we jointly developed The Decarbonisation Playbook for Institutes of 
+                    Higher Learning (IHLs) with KPMG Singapore. It seeks to share SP’s journey towards decarbonisation 
+                    so as to be a useful reference for IHLs in their own journey.
+                </p>
+                <p>
+                Together, as a community, we believe we can achieve our 60-30 Vision by 2030.
+                </p>
+
+                <div class = "row mt-3 gy-3">
+                    <div class = "col-lg-4 col-md-6 col-sm-12">
+                        <iframe src="https://www.youtube-nocookie.com/embed/uJMFK5nswmA?si=k_7lxp-96Usa8Q1c" 
+                        title="YouTube video player" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class = "w-100 h-100">
+                        </iframe>
+                    </div>
+
+                    <div class = "col-lg-4 col-md-6 col-sm-12">
+                        <a href = "https://www.sp.edu.sg/docs/default-source/comms-docs/sp-kpmg_decarbonisation-playbook-for-ihls_nov23.pdf?sfvrsn=b2ab8603_4" 
+                        target = "_blank">
+                            <img src = "images/images-future/Content-Future-Plans-Page2-Decarbonisation.png" alt = "Decarbonistaion" class = "h-100 w-100">
+                        </a>
+                    </div>
+
+                    <div class = "col-lg-4 col-md-6 col-sm-12">
+                        <iframe src="https://www.youtube-nocookie.com/embed/E_sZlo3xJ4I?si=tkhyzP5__3JNuz_U" 
+                        title="YouTube video player"  
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class = "w-100 h-100">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class = "container-fluid mt-5 d-flex justify-content-center align-items-center" id = "Future-Plan-Header3">
+            <div class = "container-md">
+                <h1 class = "display-1 text-white text-center">Empowerment</h1>
+            </div>
+        </div>
+
+        <div class = "container-fluid mt-5" id = "SP-News-Page">
+            <div class = "container-md" id = "SP-News-Page-Inner-Container">
+                <h3 class = "text-center">We enable action and empower people</h3>
+                <h1 class = "text-center my-5 display-3">SP In The News</h1>
+
+                <div class = "row gy-5">
+                    <div class = "col-lg-4 col-md-6 col-sm-12">
+                        <div class = "card h-100 w-100">
+                            <a href = "https://www.sp.edu.sg/sp/news/sp/danfoss-launches-asia-pacific-s-first-sustainability-technology-centre-in-singapore">
+                                <div class = "Content-SP-News-Page-Images-Wrapper">
+                                    <img src = "images/images-future/Content-SP-News-Image1.jpg" alt = "" class = "Content-SP-News-Page-Images">
+                                </div>                            
+                            </a>
+                            <div class = "card-body bg-body-tertiary">
+                                <div class = "card-text">
+                                <h5>Danfoss launches Asia-Pacific’s first Sustainability Technology Centre in Singapore</h5>
+                                <p class = "mt-3"><i class="bi bi-calendar me-3"></i>08 January 2019</p>
+                                <a href = "https://www.sp.edu.sg/sp/news/sp/danfoss-launches-asia-pacific-s-first-sustainability-technology-centre-in-singapore" 
+                                class = "Singapore-Poly-Red-Text-Link">
+                                    > Find Out More
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "col-lg-4 col-md-6 col-sm-12">
+                        <div class = "card h-100 w-100">
+                            <a href = "https://www.sp.edu.sg/sp/news/sp/singapore-polytechnic-to-partner-with-kpmg-to-develop-blueprint-for-net-zero-sustainability-roadmap">
+                                <div class = "Content-SP-News-Page-Images-Wrapper">
+                                    <img src = "images/images-future/Content-SP-News-Image2.jpg" alt = "" class = "Content-SP-News-Page-Images">
+                                </div>                            
+                            </a>
+                            <div class = "card-body bg-body-tertiary">
+                                <div class = "card-text">
+                                <h5>[8world] Singapore Polytechnic to partner with KPMG to develop blueprint for net zero sustainability roadmap</h5>
+                                <p class = "mt-3"><i class="bi bi-calendar me-3"></i>08 January 2019</p>
+                                <a href = "https://www.sp.edu.sg/sp/news/sp/singapore-polytechnic-to-partner-with-kpmg-to-develop-blueprint-for-net-zero-sustainability-roadmap" 
+                                class = "Singapore-Poly-Red-Text-Link">
+                                    > Find Out More
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "col-lg-4 col-md-6 col-sm-12">
+                        <div class = "card h-100 w-100">
+                            <a href = "https://www.sp.edu.sg/sp/news/sp/singapore-polytechnic-taps-kpmg-to-develop-net-zero-sustainability-roadmap-by-2024">
+                                <div class = "Content-SP-News-Page-Images-Wrapper">
+                                    <img src = "images/images-future/Content-SP-News-Image3.jpg" alt = "" class = "Content-SP-News-Page-Images">
+                                </div>                            
+                            </a>
+                            <div class = "card-body bg-body-tertiary">
+                                <div class = "card-text">
+                                <h5>[Singapore Business Review] Singapore Polytechnic taps KPMG to develop net-zero sustainability roadmap by 2024</h5>
+                                <p class = "mt-3"><i class="bi bi-calendar me-3"></i>08 January 2019</p>
+                                <a href = "https://www.sp.edu.sg/sp/news/sp/singapore-polytechnic-taps-kpmg-to-develop-net-zero-sustainability-roadmap-by-2024" 
+                                class = "Singapore-Poly-Red-Text-Link">
+                                    > Find Out More
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "col-lg-4 col-md-6 col-sm-12">
+                        <div class = "card h-100 w-100">
+                            <a href = "https://www.sp.edu.sg/sp/news/sp/sp-enlists-kpmg-as-consultant-to-develop-sustainable-blueprint-for-net-zero-emissions">
+                                <div class = "Content-SP-News-Page-Images-Wrapper">
+                                    <img src = "images/images-future/Content-SP-News-Image4.jpg" alt = "" class = "Content-SP-News-Page-Images">
+                                </div>                            
+                            </a>
+                            <div class = "card-body bg-body-tertiary">
+                                <div class = "card-text">
+                                <h5>[Lianhe Zaobao] SP enlists KPMG as consultant to develop sustainable blueprint for net-zero emissions</h5>
+                                <p class = "mt-3"><i class="bi bi-calendar me-3"></i>08 January 2019</p>
+                                <a href = "https://www.sp.edu.sg/sp/news/sp/sp-enlists-kpmg-as-consultant-to-develop-sustainable-blueprint-for-net-zero-emissions" 
+                                class = "Singapore-Poly-Red-Text-Link">
+                                    > Find Out More
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class = "col-lg-4 col-md-6 col-sm-12">
+                        <div class = "card h-100 w-100">
+                            <a href = "https://www.sp.edu.sg/sp/news/sp/singapore-polytechnic-to-develop-net-zero-sustainability-roadmap-by-2024">
+                                <div class = "Content-SP-News-Page-Images-Wrapper">
+                                    <img src = "images/images-future/Content-SP-News-Image5.jpg" alt = "" class = "Content-SP-News-Page-Images">
+                                </div>                            
+                            </a>
+                            <div class = "card-body bg-body-tertiary">
+                                <div class = "card-text">
+                                <h5>Singapore Polytechnic to Develop Net Zero Sustainability Roadmap by 2024</h5>
+                                <p class = "mt-3"><i class="bi bi-calendar me-3"></i>08 January 2019</p>
+                                <a href = "https://www.sp.edu.sg/sp/news/sp/singapore-polytechnic-to-develop-net-zero-sustainability-roadmap-by-2024" 
+                                class = "Singapore-Poly-Red-Text-Link">
+                                    > Find Out More
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "col-lg-4 col-md-6 col-sm-12">
+                        <div class = "card h-100 w-100">
+                            <a href = "https://www.youtube.com/watch?v=FIBFILFORC8">
+                                <div class = "Content-SP-News-Page-Images-Wrapper">
+                                    <img src = "images/images-future/Content-SP-News-Image6.jpg" alt = "" class = "Content-SP-News-Page-Images">
+                                </div>                            
+                            </a>
+                            <div class = "card-body bg-body-tertiary">
+                                <div class = "card-text">
+                                <h5>Singapore Polytechnic to Develop Net Zero Sustainability Roadmap by 2024</h5>
+                                <p class = "mt-3"><i class="bi bi-calendar me-3"></i>06 July 2023</p>
+                                <a href = "https://www.youtube.com/watch?v=FIBFILFORC8" 
+                                class = "Singapore-Poly-Red-Text-Link">
+                                    > Find Out More
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <h1 class = "text-center display-3 mt-5 mb-3">Sustainability and Green Skills Courses</h1>
+                <p>SP's Professional & Adult Continuing Education (PACE) Academy has rolled out six new sustainability and green 
+                    skills courses to add to their existing 33 courses mapped to SkillsFuture Singapore's Green Skills Cluster. 
+                    The comprehensive course suite spans generating general sustainability awareness, honing cross-sector and 
+                    cross-functional skills, and equipping specific job functions with sector-specific skills.
+                </p>
+                <p>
+                Check out the courses below or visit the 
+                <a href = "https://www.sp.edu.sg/pace/courses/all-courses?page=1&per_page=12&topic=sustainability-and-green-skills" 
+                target = "_blank">SP PACE website</a> for a full list of Sustainability and Green Skills courses 
+                you can sign up for.
+                </p>
+
+                <div class = "row my-5 gy-3"> 
+
+                    <div class = "col-lg-4 col-md-6 col-sm-12">
+                        <div class = "card h-100 w-100">
+                            <a href = "https://www.sp.edu.sg/pace/courses/all-courses/course-details/best-in-class-in-environmental-sustainability-and-energy-efficiency-sustainability-lead">
+                                <div class = "Content-SP-News-Page-Images-Wrapper">
+                                    <img src = "images/images-future/Content-Sustainable-Green-Skill-Image1.jpg" alt = "" class = "Content-SP-News-Page-Images">
+                                </div>                            
+                            </a>
+                            <div class = "card-body bg-body-tertiary">
+                                <div class = "card-text">
+                                <h5>[In collaboration with Grundfos and Danfoss] Best-in-Class in Environmental Sustainability and Energy Efficiency – Sustainability Lead</h5>
+                                <p class = "mt-3"><i class="bi bi-calendar me-3"></i>09 May 2023</p>
+                                <a href = "https://www.sp.edu.sg/pace/courses/all-courses/course-details/best-in-class-in-environmental-sustainability-and-energy-efficiency-sustainability-lead" 
+                                class = "Singapore-Poly-Red-Text-Link">
+                                    > Find Out More
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "col-lg-4 col-md-6 col-sm-12">
+                        <div class = "card h-100 w-100">
+                            <a href = "https://www.sp.edu.sg/pace/courses/all-courses/course-details/sustainability-transformation-through-green-compass">
+                                <div class = "Content-SP-News-Page-Images-Wrapper">
+                                    <img src = "images/images-future/Content-Sustainable-Green-Skill-Image2.jpg" alt = "" class = "Content-SP-News-Page-Images">
+                                </div>                            
+                            </a>
+                            <div class = "card-body bg-body-tertiary">
+                                <div class = "card-text">
+                                <h5>[In collaboration with A*STAR SIMTech] Sustainability Transformation Through Green Compass</h5>
+                                <p class = "mt-3"><i class="bi bi-calendar me-3"></i>09 May 2023</p>
+                                <a href = "https://www.sp.edu.sg/pace/courses/all-courses/course-details/sustainability-transformation-through-green-compass" 
+                                class = "Singapore-Poly-Red-Text-Link">
+                                    > Find Out More
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "col-lg-4 col-md-6 col-sm-12">
+                        <div class = "card h-100 w-100">
+                            <a href = "https://www.sp.edu.sg/pace/courses/all-courses/course-details/sustainability-made-easy-for-small-and-medium-enterprises-smes">
+                                <div class = "Content-SP-News-Page-Images-Wrapper">
+                                    <img src = "images/images-future/Content-Sustainable-Green-Skill-Image3.jpg" alt = "" class = "Content-SP-News-Page-Images">
+                                </div>                            
+                            </a>
+                            <div class = "card-body bg-body-tertiary">
+                                <div class = "card-text">
+                                <h5>Sustainability Made Easy for Small and Medium Enterprises (SMEs)</h5>
+                                <p class = "mt-3"><i class="bi bi-calendar me-3"></i>09 May 2023</p>
+                                <a href = "https://www.sp.edu.sg/pace/courses/all-courses/course-details/sustainability-made-easy-for-small-and-medium-enterprises-smes" 
+                                class = "Singapore-Poly-Red-Text-Link">
+                                    > Find Out More
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "col-lg-4 col-md-6 col-sm-12">
+                        <div class = "card h-100 w-100">
+                            <a href = "https://www.sp.edu.sg/pace/courses/all-courses/course-details/understanding-sustainability-what-and-why">
+                                <div class = "Content-SP-News-Page-Images-Wrapper">
+                                    <img src = "images/images-future/Content-Sustainable-Green-Skill-Image4.jpg" alt = "" class = "Content-SP-News-Page-Images">
+                                </div>                            
+                            </a>
+                            <div class = "card-body bg-body-tertiary">
+                                <div class = "card-text">
+                                <h5>Understanding Sustainability: What and Why?</h5>
+                                <p class = "mt-3"><i class="bi bi-calendar me-3"></i>09 May 2023</p>
+                                <a href = "https://www.sp.edu.sg/pace/courses/all-courses/course-details/understanding-sustainability-what-and-why" 
+                                class = "Singapore-Poly-Red-Text-Link">
+                                    > Find Out More
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "col-lg-4 col-md-6 col-sm-12">
+                        <div class = "card h-100 w-100">
+                            <a href = "https://www.sp.edu.sg/pace/courses/all-courses/course-details/sustainability-for-practitioners-sustainability-reporting-benchmarking-environmental-social-and-governance-esg-performance">
+                                <div class = "Content-SP-News-Page-Images-Wrapper">
+                                    <img src = "images/images-future/Content-Sustainable-Green-Skill-Image5.jpg" alt = "" class = "Content-SP-News-Page-Images">
+                                </div>                            
+                            </a>
+                            <div class = "card-body bg-body-tertiary">
+                                <div class = "card-text">
+                                <h5>Sustainability for Practitioners: Sustainability Reporting Benchmarking Environmental, Social and Governance (ESG) Performance</h5>
+                                <p class = "mt-3"><i class="bi bi-calendar me-3"></i>09 May 2023</p>
+                                <a href = "https://www.sp.edu.sg/pace/courses/all-courses/course-details/sustainability-for-practitioners-sustainability-reporting-benchmarking-environmental-social-and-governance-esg-performance" 
+                                class = "Singapore-Poly-Red-Text-Link">
+                                    > Find Out More
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "col-lg-4 col-md-6 col-sm-12">
+                        <div class = "card h-100 w-100">
+                            <a href = "https://www.sp.edu.sg/pace/courses/all-courses/course-details/sustainability-for-practitioners-sustainability-reporting-benchmarking-environmental-social-and-governance-esg-performance">
+                                <div class = "Content-SP-News-Page-Images-Wrapper">
+                                    <img src = "images/images-future/Content-Sustainable-Green-Skill-Image6.jpg" alt = "" class = "Content-SP-News-Page-Images">
+                                </div>                            
+                            </a>
+                            <div class = "card-body bg-body-tertiary">
+                                <div class = "card-text">
+                                <h5>Sustainability for Practitioners: Sustainability Reporting Benchmarking Environmental, Social and Governance (ESG) Performance</h5>
+                                <p class = "mt-3"><i class="bi bi-calendar me-3"></i>09 May 2023</p>
+                                <a href = "https://www.sp.edu.sg/pace/courses/all-courses/course-details/sustainability-for-practitioners-sustainability-reporting-benchmarking-environmental-social-and-governance-esg-performance" 
+                                class = "Singapore-Poly-Red-Text-Link">
+                                    > Find Out More
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <hr class = "border-3">
+
+        <div class = "container-fluid my-5" id = "Sharing-Page">
+            <div class = "container-md" id = "Sharing-Inner-Container">
+                <h1 class = "display-2 text-center mb-3"><i class="bi bi-messenger"></i></h1>
+                <h3 class = "text-center">Share Your Story</h3>
+                <p class = "text-center mt-3">Have a green initiative to share? 
+                    <a href = "https://www.instagram.com/singaporepoly/" target = "_blank">Send us a DM</a> 
+                    to get featured on our social media!
+                </p>
+            </div>
+        </div>
+
+        <footer class = "container-fluid bg-dark p-5 text-white border-top border-white" id = "Footer">
+            <div class = "container w-75 p-2 mt-2">
+                <div class = "row border-bottom border-light">
+                    <div class = "col-lg-4 col-md-6 col-sm-12 p-1 d-flex flex-column justify-content-center">
+                        <img src = "images/images-shared/Navbar-Footer-Singapore-Poly-Brand.png" 
+                        alt = "SP Brand"
+                        class = "align-self-center"
+                        id = "Singapore-Poly-Logo-Footer">
+                        <div class = "mt-3 align-self-center">
+                            <p>Singapore Polytechnic</p>
+                            <p>500 Dover Road Singapore 139651</p>
+                        </div>
+                    </div>
+    
+                    <div class = "col-lg-4">
+                    </div>
+    
+                    <div class = "col-lg-4 col-md-6 col-sm-12 p-1 d-flex flex-column justify-content-center align-items-center">
+                        <p class = "p-3">
+                        Follow Us On:
+                        <a href = "https://www.facebook.com/singaporepolytechnic" target = "_blank" class = "bi bi-facebook" id = "footer-facebook-icon"></a>
+                        <a href = "https://www.instagram.com/singaporepoly/" target = "_blank" class = "bi bi-instagram" id = "footer-instagram-icon"></a>
+                        <a href = "https://www.youtube.com/singaporepolytechnic" target = "_blank" class = "bi bi-youtube" id = "footer-youtube-icon"></a>
+                        <a href = "https://sg.linkedin.com/school/singapore-polytechnic/" target = "_blank" class = "bi bi-linkedin" id = "footer-linkedin-icon"></a>
+                        <a href = "https://t.me/SingaporePoly" target = "_blank" class = "bi bi-telegram" id = "footer-telegram-icon"></a>
+                        </p>
+                        
+                        <p class = "p-3">SP App:
+                        <a href = "https://www.sp.edu.sg/sp/about-sp/sp-mobile-apps" 
+                        target  ="_blank"
+                        class = "bi bi-phone-fill" id = "footer-mobile-icon">
+                        </a>
+                        </p>
+                    </div>
+                </div>
+    
+                <div class = "row mt-3">
+                    <div class = "col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+                        <div class = "align-self-center mt-3">
+                            <p>Updated On: 6/7/2024 <span class = "text-white-50">(DD/MM/YY)</span></p>
+                            <p id = "browser-logs">Viewed on: </p>
+                            <p id = "language-logs">Language: </p>
+                            <p id = "date"></p>
+                            <p id = "time"></p>
+                        </div>
+                    </div>
+    
+                    <div class = "col-lg-4 col-md-6 col-sm-12">
+                    </div>
+    
+                    <div class = "col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-end mt-5">
+                        <p>&#169;2024 Singapore Polytechnic</p>
+                    </div>
+                </div>
+            </div>
+    
+        </footer>
+    </body>
+</html>

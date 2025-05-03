@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <meta charset = "UTF-8">
+
+        <!-- CDN For Bootstap 5-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+        <!--Custom Favicon and Stylesheets and Scripts-->
+        <link rel = "icon" href = "images/images-shared/Navbar-Singapore_Poly_Logo.jpg">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">        
+        <link rel = "stylesheet" href = "stylesheets/stylesheet-index/style-content.css">
+        <link rel = "stylesheet" href = "stylesheets/stylesheet-index/style-layout.css">
+        <script defer src = "scripts/script-index.js"></script>
+
+        <!--Website title-->
+        <title>SP 70 | Anniversary</title>
+    </head>
+    <body data-bs-spy = "scroll" data-bs-target = ".scrollbar-menu" 
+    data-bs-theme = "light" id = "body">
+        <nav class = "navbar navbar-expand-xxl navbar-dark bg-dark">
+            <div class = "container-xxl pb-3" id = "navbar-container">
+                <div class = "navbar-brand w-50">
+                <a href = "https://www.sp.edu.sg/" target = "_blank">
+                    <img src = "images/images-shared/Navbar-Footer-Singapore-Poly-Brand.png" 
+                    alt = "SP Brand"
+                    class = "img-responsive w-50">
+                </a>
+                <a href = "https://www.sp.edu.sg/sp70" target = "_blank">
+                    <img src = "images/images-shared/Navbar-Singapore_Poly_70_Anniversary_Brand.png" 
+                    alt = "SP 70 Brand"
+                    class = "img-responsive w-50">
+                </a>
+                </div>
+
+                <button type = "button" 
+                class = "navbar-toggler" 
+                data-bs-toggle = "collapse" 
+                data-bs-target = "#navbar-menu">
+                <span class = "navbar-toggler-icon"></span>
+                </button>
+
+                <div class = "navbar-collapse collapse" id = "navbar-menu">
+                <ul class = "navbar-nav">
+                    <li class = "nav-item">
+                        <a href = "index.html" class = "nav-link active">Anniversary</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "future.html" class = "nav-link">Future</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "wishes.html" class = "nav-link">Wishes</a>
+                    </li>
+                </ul>
+
+                <ul class = "navbar-nav ms-auto">
+                    <li class = "nav-item pe-2">
+                        <form>
+                            <div class="form-check form-switch mb-3">
+                                <label class="form-check-label text-white" id = "darkModeSwitchInfo">Light Mode</label>
+                                <input class="form-check-input" type= "checkbox" 
+                                id="darkModeSwitch" name="darkmode" >
+                              </div>
+                        </form>
+                    </li>
+                    <li class = "nav-item">
+                        <button type = "button" class = "bg-light float-start border-end-1 border-light" id = "Navbar-Keyword-Search-Button">
+                            <span>&#128270;</span>
+                        </button>
+                        <div class = "input-wrap">
+                        <input type = "search" placeholder="Search..." id = "userSearchInput" 
+                        class = "bg-light text-bg-light border-2 border-light" list = "Keywords-List">
+                        <button id="caret"> &#9660;</button>
+                        </div>
+                        <datalist id = "Keywords-List">
+                            <option value = "Introduction-Page">Overview</option>
+                            <option value = "History-Page">History</option>
+                            <option value = "For-All-Ages">For All Ages Book</option>
+                            <option value = "Celebration-Page-BG">Celebration Details</option>
+                            <option value = "Quiz-Page">Quiz</option>
+                            <option value = "SP-News-Page">Sp In The News</option>
+                            <option value = "SP-Anniversary-Countdown-Page">SP Anniversary Countdown Timer</option>
+                        </datalist>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+        <nav class = "navbar navbar-expand bg-dark 
+        navbar-dark sticky-top p-3 shadow-lg scrollbar-menu" 
+        id = "navbar-indicators">
+            <div class = "container-xl">
+                <ul class = "navbar-nav">
+                    <li class = "nav-item">
+                        <a href = "#Introduction-Page" class = "nav-link">Overview</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "#History-Page" class = "nav-link">History</a>
+                    </li>
+                    <li class = "nav-item dropdown">
+                        <a href = "#For-All-Ages" class = "nav-link dropdown-toggle" 
+                        data-bs-toggle = "dropdown">For All Ages</a>
+
+                        <ul class = "dropdown-menu dropdown-menu-dark mt-3">
+                            <li><a href = "#For-All-Ages" class = "dropdown-item">Introduction</a></li>
+                            <li><a href = "#For-All-Ages2" class = "dropdown-item">Details</a></li>
+                        </ul>
+                    </li>
+
+                    <li class = "nav-item dropdown">
+                        <a href = "#Celebration-Page-BG" class = "nav-link dropdown-toggle" 
+                        data-bs-toggle = "dropdown">Celebration</a>
+
+                        <ul class = "dropdown-menu dropdown-menu-dark mt-3">
+                            <li><a href = "#Celebration-Page-BG" class = "dropdown-item">Introduction</a></li>
+                            <li><a href = "#Celebration-Page2" class = "dropdown-item">Details</a></li>
+                        </ul>
+                    </li>
+
+                    <li class = "nav-item">
+                        <a href = "#Quiz-Page" class = "nav-link">Quiz</a>
+                    </li>
+
+                    <li class = "nav-item">
+                        <a href = "#SP-News-Page" class = "nav-link">News</a>
+                    </li>
+
+                    <li class = "nav-item">
+                        <a href = "#SP-Anniversary-Countdown-Page" class = "nav-link">Countdown</a>
+                    </li>
+                </ul>
+                <ul class = "navbar-nav ms-auto">
+                    <li class = "nav-item text-light">
+                        <button id = "Font-Size-Default">A</button>
+                        <button id = "Font-Size-Large">A</button>
+                        <button id = "Font-Size-Larger">A</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Sidebar Button if viewed on mobile -->
+        <button class = "d-md-none text-dark border border-light" 
+        id = "navbar-sidebar-button" data-bs-toggle = "offcanvas" 
+        data-bs-target = "#navbar-indicator-sidebar">></button>
+
+        <!-- Sidebar Contents-->
+        <!-- data-bs-scroll allows users to scroll even if the sidebar is opened -->
+        <div class = "offcanvas offcanvas-md w-50 offcanvas-start text-bg-dark" 
+        data-bs-scroll = "true" 
+        id = "navbar-indicator-sidebar">
+            <div class = "offcanvas-header mt-3">
+                <div class = "offcanvas-title">
+                    <h1>Contents</h1>
+                </div>
+                <button class = "btn-close btn-close-white float-end" data-bs-dismiss = "offcanvas"></button>
+            </div>
+
+            <div class = "offcanvas-body scrollbar-menu">
+                <ul class = "nav nav-tabs d-flex flex-column gap-2 border-bottom-0">
+                    <li class = "nav-item">
+                        <a href = "#Introduction-Page" class = "nav-link text-bg-dark">Overview</a>
+                    </li>
+
+                    <li class = "nav-item">
+                        <a href = "#History-Page" class = "nav-link text-bg-dark">History</a>
+                    </li>
+
+                    <li class = "nav-item">
+                        <a href = "#For-All-Ages" class = "nav-link text-bg-dark">For All Ages</a>
+                    </li>
+
+                    <li class = "nav-item">
+                        <a href = "#Celebration-Page-BG" class = "nav-link text-bg-dark">Celebration</a>
+                    </li>
+
+                    <li class = "nav-item">
+                        <a href = "#Quiz-Page" class = "nav-link text-bg-dark">Quiz</a>
+                    </li>
+
+                    <li class = "nav-item">
+                        <a href = "#SP-News-Page" class = "nav-link text-bg-dark">News</a>
+                    </li>
+
+                    <li class = "nav-item">
+                        <a href = "#SP-Anniversary-Countdown-Page" class = "nav-link text-bg-dark">Coundown</a>
+                    </li>
+
+                    <li class = "nav-item text-center">
+                        <button id = "Font-Size-Default2">A</button>
+                        <button id = "Font-Size-Large2">A</button>
+                        <button id = "Font-Size-Larger2">A</button>
+                    </li>
+                </ul>
+                <h6 class = "mt-2 mb-4">Navigation</h6>
+                <ul class = "nav nav-tabs d-flex flex-column gap-2 mt-2 border-0">
+                    <li class = "nav-item">
+                        <a href = "index.html" class = "nav-link active text-bg-dark">Anniversary</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "future.html" class = "nav-link text-bg-dark">Future</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "wishes.html" class = "nav-link text-bg-dark">Wishes</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        
+        <div id = "Navbar-Bottom-Right">
+            <a href = "index.html" class = "Navbar-Bottom-Right-Icons">
+                <img src = "images/images-shared/Navbar-Bottom-Right-Anniversary.png" alt = "">
+            </a>
+            <a href = "future.html" class = "Navbar-Bottom-Right-Icons">
+                <img src = "images/images-shared/Navbar-Bottom-Right-Future.jpg" alt ="">
+            </a>
+            <a href = "wishes.html" class = "Navbar-Bottom-Right-Icons">
+                <img src = "images/images-shared/Navbar-Bottom-Right-Wishes.png" alt = "">
+            </a>
+        </div>
+
+        <button id = "Scroll-Button-Top" class = "text-white d-md-none"><i class="bi bi-arrow-bar-up text-center"></i></button>
+
+        <!--Landing Page BG-->
+        <div class = "container-fluid d-flex justify-content-center align-items-center" 
+        id = "Landing-Page-BG">
+
+            <div class = "container-md">
+                <div class = "row text-white text-center">
+                    <div class = "col-12">
+                    <h1 class = "d-inline-block border-bottom border-light" 
+                    id = "Content-Landing-Page_BG-Caption-Title">
+                    <span id = "Content-Landing-Page-Title-Red">Singapore Poly's</span> 
+                    70 <span id = "super">th</span>Anniversary
+                    </h1>
+                    </div>
+                </div>
+                <div class = "row text-white">
+                    <div class = "col-12">
+                    <p class = "p-3 text-center">Singapore poly has came a long way since its establishment on 
+                        27 October, 1954. This year, 2024, is when Singapore poly reaches its 70 year 
+                        old mark! Singapore Poly is welcoming people from all walks of life to come 
+                        celebrate their 70th anniversary!
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class = "container-fluid mt-5" id = "Introduction-Page">
+            <div class = "container-md" id = "Introduction-Page-Inner-Container">
+                <h1 class = "display-1 text-center">Overview</h1>
+                <div class = "row mb-5 gy-3">
+                    <div class = "col-lg-4 col-md-6 col-sm-12">
+                        <div class = "card h-100">
+                            <img src = "images/images-Index/Content-Introduction-Page-Old_SP.png" 
+                            class = "card-img-top" 
+                            alt = "Old Singapore Poly Campus">
+                            <div class = "card-header">
+                                <div class = "card-title text-center">
+                                    <h1>History</h1>
+                                </div>
+                            </div>
+                            <div class = "card-body bg-body-tertiary">
+                                <div class = "card-subtitle">
+                                    <p>
+                                        Singapore Poly still stands after 70 years in Singapore! To be put 
+                                        that in persepctive, SP was born before the independence of Singapore 
+                                        in 9 August 1965!
+                                    </p>
+                                    <p>
+                                        Find out more about our history by clicking the button!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class = "card-footer">
+                                <a href = "#History-Page" class = "btn btn-info float-end rounded-pill" style = "z-index: 1000;">More ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "col-lg-4 col-md-6 col-sm-12">
+                        <div class = "card h-100">
+                            <img src = "images/images-Index/Content-Introduction-Page-For_All_Ages_Book.jpg" 
+                            class = "card-img-top"
+                            alt = "For All Ages Book Cover">
+                            <div class = "card-header">
+                                <div class = "card-title text-center">
+                                    <h1>Our Books</h1>
+                                </div>
+                            </div>
+                            <div class = "card-body bg-body-tertiary">
+                                <div class = "card-subtitle">
+                                    <p>To celebrate Singapore Poly's 70th annivesary, 
+                                        we have released a book titled "For All Ages".
+                                        You can find many interesting things about SP.
+                                    </p>
+                                    <p>Find out more on our newly released book 
+                                        by clicking on the button below!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class = "card-footer">
+                                <a href = "#For-All-Ages" class = "btn btn-info float-end rounded-pill">
+                                    More >
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "col-lg-4 col-md-6 col-sm-12">
+                        <div class = "card h-100">
+                            <img src = "images/images-Index/Content-Introduction-Page-SP_70.jpg" 
+                            class = "card-img-top"
+                            alt = "SP 70 Brand">
+                            <div class = "card-header">
+                                <div class = "card-title text-center">
+                                    <h1>Celebration</h1>
+                                </div>
+                            </div>
+                            <div class = "card-body bg-body-tertiary">
+                                <div class = "card-subtitle">
+                                    <p>Singapore Poly is going to organise some events and activities for 
+                                        the celebration of its 70th annivesary! Everyone is invited 
+                                        and welcome to join.
+                                    </p>
+                                    <p>
+                                        Find out more about the details of the event by clicking the 
+                                        button below.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class = "card-footer">
+                                <a href = "#Celebration-Page-BG" class = "btn btn-info float-end rounded-pill">
+                                    More >
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "col-lg-4 col-md-6 col-sm-12">
+                        <div class = "card h-100">
+                            <img src = "images/images-Index/Content-Introduction-Page-Future_Plans.gif" 
+                            class = "card-img-top"
+                            alt = "Sustainable Planet Hoal">
+                            <div class = "card-header">
+                                <div class = "card-title text-center">
+                                    <h1>Future Plans</h1>
+                                </div>
+                            </div>
+                            <div class = "card-body bg-body-tertiary">
+                                <div class = "card-subtitle">
+                                    <p>Singapore Poly has released its details and information on their future plans 
+                                        to contribute to a greener and more sustainable planet.
+                                    </p>
+                                    <p>
+                                        Find out more details about our pledge and plans by clicking the 
+                                        button below!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class = "card-footer">
+                                <a href = "future.html" class = "btn btn-info float-end rounded-pill">
+                                    More >
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "col-lg-4 col-md-6 col-sm-12">
+                        <div class = "card h-100">
+                            <img src = "images/images-Index/Content-Introduction-Page-SP_70_Anniversary_Wishes.png" 
+                            alt = "Wishes For SP"
+                            class = "card-img-top">
+                            <div class = "card-header">
+                                <div class = "card-title text-center">
+                                    <h1>Wishes</h1>
+                                </div>
+                            </div>
+                            <div class = "card-body bg-body-tertiary">
+                                <div class = "card-subtitle">
+                                    <p>If you have any wishes or personal messages for SP 70. You can do 
+                                        it here on this website! Your message can be as simple as "Happy 70th Anniversary!".
+                                    </p>
+                                    <p>
+                                        You can send your well wishes and messages by clicking on the button below!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class = "card-footer">
+                                <a href = "wishes.html" class = "btn btn-info float-end rounded-pill">More ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- History Page -->
+        <div class = "container-fluid mt-5" id = "History-Page">
+            <div class = "container-md" id = "History-Page-Inner-Container">
+                <h1 class = "display-1 text-center">
+                    History &#x1F551;
+                </h1>
+                <h1 class = "mt-3">Background</h1>
+                <p class = "mt-3">
+                    Established on 27 October 1954, Singapore Polytechnic (SP) was Singapore’s first polytechnic. 
+                    Initially concerned with producing skilled technicians to support the nation’s move toward industrialisation, 
+                    SP has since evolved to meet changing manpower needs as Singapore’s economy came to focus on high-technology 
+                    and knowledge-based industries, rather than low-cost labour-intensive manufacturing.
+                </p>
+
+                <h1 class = "mt-3">Singapore Poly's Story</h1>
+                <div id = "accordion" class = "mt-3">
+
+                <div class = "card">
+                    <div class = "card-header d-flex justify-content-between">
+                        <div class = "card-title">
+                        Importance of Singapore Polytechnic
+                        </div>
+                        <button type = "button" 
+                        class = "btn rounded-1 btn-success" 
+                        data-bs-toggle = "collapse" 
+                        data-bs-target = "#History-Page-Importance">
+                        &#x25BC;
+                        </button>
+                    </div>
+
+                    <div class = "collapse fade"
+                    id = "History-Page-Importance" 
+                    data-bs-parent = "#accordion">
+                    <div class = "card-body bg-secondary-subtle">
+                        <p>Technical education gained importance in Singapore following the 
+                            end of the Second World War when the economy moved away from entrepot 
+                            trade towards industrialisation. At that time, the shortage of skilled 
+                            workers was a major concern, prompting calls from both private and public 
+                            sectors, as well as individuals, for the expansion of technical education.
+                        </p>  
+                    </div>
+                    </div>
+                </div>
+
+                <div class = "card">
+                    <div class = "card-header d-flex justify-content-between">
+                        <div class = "card-title">
+                        Establishment And Early Years
+                        </div>
+                        <button type = "button" 
+                        class = "btn rounded-1 btn-success" 
+                        data-bs-toggle = "collapse" 
+                        data-bs-target = "#History-Page-Establishment-Early-Years">
+                        &#x25BC;
+                        </button>
+                    </div>
+
+                    <div class = "collapse fade" 
+                    id = "History-Page-Establishment-Early-Years" 
+                    data-bs-parent = "#accordion">
+                    <div class = "card-body bg-secondary-subtle">
+                        <div class = "row">
+                            <div class = "col-md-6">
+                                <p>
+                                The Singapore Polytechnic Act was passed on 27 October 1954. In January 1955, 
+                                the first Board of Governors was appointed with industrialist L. Cresson as 
+                                its chairman. The first principal, D. J. Williams, former principal of 
+                                Lancaster and Morecambe College of Further Education, was appointed in January 
+                                1956.
+                                </p>
+                            </div>
+                            <div class = "col-md-6 d-flex justify-content-lg-between">
+                                <figure class = "w-50">
+                                <img src = "/images/images-Index/Content-History-Page-Board_Of_Governors.jpg" class = "w-100"
+                                alt = "First Board of Governors">
+                                <figcaption class = "text-center">First Board Of Governors</figcaption>
+                                </figure>
+
+                                <figure class = "w-50">
+                                    <img src = "/images/images-Index/Content-History-Page-DJ_Williams.jpg" class = "w-100"
+                                    alt = "First Principal (D . J. WIlliams)">
+                                    <figcaption class = "text-center">First Principal (D . J. WIlliams)</figcaption>
+                                    </figure>
+                            </div>
+                        </div>
+                        
+                        <p>
+                        The campus was officially opened by Prince Philip, Duke of Edinburgh, 
+                        on 24 February 1959.
+                        </p>
+                    </div>
+                    </div>
+                </div>
+                <div class = "card">
+                    <div class = "card-header d-flex justify-content-between">
+                        <div class = "card-title">
+                        School Motto and Crest
+                        </div>
+                        <button type = "button" 
+                        class = "btn rounded-1 btn-success" 
+                        data-bs-toggle = "collapse" 
+                        data-bs-target = "#History-Page-School-Motto-And-Crest">
+                        &#x25BC;
+                        </button>
+                    </div>
+    
+                    <div class = "collapse fade" 
+                    id = "History-Page-School-Motto-And-Crest" 
+                    data-bs-parent = "#accordion">
+                    <div class = "card-body bg-secondary-subtle">
+                        <p>
+                        SP’s motto is Berkhidmatan Dengan Keahlian, meaning “to serve with skill” in Malay. 
+                        This motto was proposed by Toh Chin Chye and adopted at a Board of Governors’ 
+                        meeting on 7 January 1960.
+                        </p>
+                        <p>
+                        The translation was updated in 2014. It became “to serve with mastery”.
+                        </p>
+                        <div class = "row">
+                            <div class = "col-md-8">
+                            <p>
+                            SP’s crest comprises a red-and-yellow shield – colours chosen to represent Singapore’s 
+                            tropical environment. The upper portion of the crest features a lion, which symbolises 
+                            Singapore, against a red background. The colour red is associated with the Singapore flag. 
+                            The lower portion of the shield is yellow. It features a compass atop a splinted wheel, 
+                            which represents precision and engineering technology respectively.
+                            </p>
+                            </div>
+                            <div class = "col-md-4 d-flex justify-content-center">
+                                <img src = "images/images-Index/Content-History-Page-Singapore_Poly_Crest.png"
+                                alt = "Singapore Poly Crest">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <h1 class = "mt-3">Pictures</h1>
+            <p>Take a look at how our campus has changed over the course of several decades!</p>
+            <div class = "carousel slide" data-bs-ride = "carousel" 
+            id = "History-Page-Carousel-Poly-Campus">
+
+                <div class = "carousel-indicators">
+                    <button type = "button" data-bs-target = "#History-Page-Carousel-Poly-Campus" 
+                    data-bs-slide-to = "0" class = "active bg-light"></button>
+                    <button type = "button" data-bs-target = "#History-Page-Carousel-Poly-Campus" class = "bg-light" 
+                    data-bs-slide-to = "1"></button>
+                </div>
+
+                <div class = "carousel-inner">
+                    <div class = "carousel-item active">
+                        <img src = "images/images-Index/Content-History-Page-Old_SP.jpg" id = "Content-History-Page-Old_Sp" class = "d-block w-100" alt = "Old_SP">
+                        <div class = "carousel-caption text-white">
+                            <h1>1960s</h1>
+                            <p>Singapore Polytechnic during its first few opening days.</p>
+                        </div>
+                    </div>
+                    <div class = "carousel-item active">
+                        <img src = "images/images-Index/Content-History-Page-SP_New.avif" id = "Content-History-Page-New_Sp" class = "d-block w-100" alt = "New_SP">
+                        <div class = "carousel-caption text-white">
+                            <h1>2020s</h1>
+                            <p>Singapore Polytechnic in the modern era as we know it.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button type = "button" class = "carousel-control-prev" data-bs-target = "#History-Page-Carousel-Poly-Campus" 
+                data-bs-slide = "prev">
+                    <span class = "carousel-control-prev-icon bg-dark"></span>
+                </button>
+                <button type = "button" class = "carousel-control-next" data-bs-target = "#History-Page-Carousel-Poly-Campus" 
+                data-bs-slide = "next">
+                    <span class = "carousel-control-next-icon bg-dark"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class = "container-fluid mt-5 p-5" id = "For-All-Ages">
+        <div class = "container-md" id = "For-All-Ages-Inner-Container">
+            <h1 class = "display-1 text-center">For All Ages</h1>
+            <p class = "text-center mt-3">In celebration of SP's 70th anniversary, we have launched a commemorative book titled ‘For All Ages, Singapore Polytechnic At Seventy’, 
+                featuring some of the people and moments that have shaped us through the years.
+            </p>
+            <div class = "row mt-3 mb-5">
+                <div class = "col-md-6 col-sm-12 p-3">
+                    <iframe class = "w-100 h-75" 
+                    src="https://www.youtube-nocookie.com/embed/CtUFQusXAkI?si=FgewfvZW_XVIjsEu" 
+                    title="Video on `For All Ages` Book" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen 
+                    id = "Content-For-All-Ages-SP_Book-Video">
+                    </iframe>
+                    <p>Watch this special video featuring interview snippets from the stories in our commemorative book!</p>
+                </div>
+                <div class = "col-md-6 col-sm-12 p-3">
+                    <img src = "images/images-Index/Content-For-All-Ages_SP_Book.jpg" 
+                    alt = "SP Book"
+                    class = "w-100 h-75">
+                    <p>Download the e-book and discover what makes SP a poly ‘For All Ages’.</p>
+                    <a href = "https://www.sp.edu.sg/docs/default-source/sp70/for-all-ages_sp-at-seventy.pdf" target = "_blank" 
+                    class = "btn btn-outline-light d-flex justify-content-center">
+                        Download PDF
+                    </a>
+
+                    <a href = "https://www.sp.edu.sg/docs/default-source/sp70/for-all-ages_sp-at-seventy056cf8399357416ea21ba00b2146352d.epub?sfvrsn=363bb97a_2&download=true" target = "_blank" 
+                    class = "btn btn-outline-light d-flex justify-content-center">
+                        Get the EPUB
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class = "container-fluid mt-5" id = "For-All-Ages2">
+        <div class = "container-md" id = "For-All-Ages2-Inner-Container">
+            <p>Becoming “future-ready” is at the core of SP's DNA, expressed in our mission of being life-ready, work-ready and world-ready. 
+                Here's some summarized extract from our commemorative book outlining three areas where SP is leading the way forward:
+            </p>
+            <div class = "row mt-5 gy-5">
+                <div class = "col-lg-5 col-md-6 col-sm-12 mt-3">
+                    <img src = "images/images-Index/Content-For-All-Ages-Personal_Work_Life.jpg"
+                    alt = "A guy talking in the seminar">
+                </div>
+                <div class = "col-lg-3 col-md-6 col-sm-12 mt-3 d-flex align-items-center justify-content-center text-bg-success border border-2 border-info-subtle">
+                    <h1 class = "text-center">Personal/Work Life <i class="bi bi-people-fill"></i></h1>
+                </div>
+                <div class = "col-lg-4 col-md-12 col-sm-12 mt-3 p-3 border border-2 border-info-subtle bg-body-tertiary">
+                    <h3 class = "text-center text-decoration-underline">Why?</h3>
+                    <p>Personal and professional landscapes are evolving significantly. Global connectivity is integral to SP's readiness for the future, 
+                        promoting curiosity about diverse global perspectives and fostering empathy crucial for understanding diverse markets and audiences.
+                    </p>
+                </div>
+
+                <div class = "col-lg-5 col-md-6 col-sm-12 mt-3">
+                    <img src = "images/images-Index/Content-For-All-Ages-Industry_Disruptions.jpg"
+                    alt = "People getting awards">
+                </div>
+                <div class = "col-lg-3 col-md-6 col-sm-12 mt-3 d-flex align-items-center justify-content-center text-bg-success border border-2 border-info-subtle">
+                    <h1 class = "text-center">Industry Disruptions <i class="bi bi-building-fill-exclamation"></i></h1>
+                </div>
+                <div class = "col-lg-4 col-md-12 col-sm-12 mt-3 p-3 border border-2 border-info-subtle bg-body-tertiary">
+                    <h3 class = "text-center text-decoration-underline">On The Rise</h3>
+                    <p>Industry is increasingly disrupted by AI, machine learning, IoT, and robotics. SP must embrace these changes to stay future-ready, 
+                        anticipating and adapting to technological shifts and workplace changes to mitigate disruption.
+                    </p>
+                </div>
+
+                <div class = "col-lg-5 col-md-6 col-sm-12 mt-3">
+                    <img src = "images/images-Index/Content-For-All-Ages-Global_Shifts.jpg" 
+                    alt = "Two people walking down a bridge in a green space">
+                </div>
+                <div class = "col-lg-3 col-md-6 col-sm-12 mt-3 d-flex align-items-center justify-content-center text-bg-success border border-2 border-info-subtle">
+                    <h1 class = "text-center">Global Shifts <i class="bi bi-globe-americas"></i></h1>
+                </div>
+                <div class = "col-lg-4 col-md-12 col-sm-12 mt-3 p-3 border border-2 border-info-subtle bg-body-tertiary">
+                    <h3 class = "text-center text-decoration-underline">Everyone is Affected</h3>
+                    <p>Climate change is a top global concern at Singapore Polytechnic, where efforts to prepare students for the future 
+                        emphasize sustainability through the Sustainable Innovation Project (SIP), a key module culminating in a 
+                        second-year capstone project.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class = "container-fluid mt-5 d-flex justify-content-center align-items-center" id = "Celebration-Page-BG">
+        <div class = "container-md">
+            <div class = "row">
+                <div class = "col-12">
+                    <!--Javascript will print out the title and subtitle once the user mouse hovers the background!-->
+                <h1 id = "Content-Celebration-Page-BG-Title" class = "text-white text-center display-1">
+                    <span id = "Content-Celebration-Page-BG-Title_Red" class = "display-1"></span>
+                </h1>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-12">
+                <h3 class = "text-white text-center" id = "Content-Celebration-Page-BG-Subtitle"></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class = "container-fluid my-5" id = "Celebration-Page2">
+        <div class = "container-md"  id = "Celebration-Page2-Inner-Container">
+            <h1 class = "display-1 text-center" id = "Singapore-Poly-Red-Text">Celebrate With Us</h1>
+            <div class = "table-responsive">
+            <table class = "table mt-3 mb-5">
+                <thead class = "h2 text-center p-3">
+                    <tr>
+                        <th class = "p-4">#</th>
+                        <th class = "p-4" colspan="2">SP 70<sup>th</sup> Anniversary Charity Golf & Dinner</th>
+                    </tr>
+                </thead>
+                <tbody id = "Content-Celebration-Page2-Table-Info">
+                    <tr>
+                        <th>Venue</th>
+                        <td colspan = "2">Orchid Country Club 
+                            <span class = "float-end me-3">
+                                Where? 	&rarr; 
+                                <a target = "_blank" class = "bi bi-pin-map-fill" id = "Content-Celebration-Page2-Table-Map-Icon"
+                            href = "https://www.google.com/maps/place/Orchid+Country+Club/@1.411778,103.8417566,17z/data=!3m1!5s0x31da143e11066c85:0x3d1f4fddef13b597!4m20!1m10!3m9!1s0x31da143dd8587001:0xf2afc9bdbd9559b7!2sOrchid+Country+Club!5m2!4m1!1i2!8m2!3d1.411778!4d103.8443315!16s%2Fg%2F11h889z8p4!3m8!1s0x31da143dd8587001:0xf2afc9bdbd9559b7!5m2!4m1!1i2!8m2!3d1.411778!4d103.8443315!16s%2Fg%2F11h889z8p4?entry=ttu">
+                            </a>
+                            </span>
+                    </td>
+                    </tr>
+                    <tr>
+                        <th>Date</th>
+                        <td colspan = "2">12 July 2024</td>
+                    </tr>
+
+                    <tr>
+                        <th>Time</th>
+                        <td>Golf: 11am-6.30pm</td>
+                        <td>Dinner: 7.30-10.30pm</td>
+                    </tr>
+
+                    <tr>
+                        <th>Details</th>
+                        <td colspan = "2">
+                            <p>Golf for a good cause with us in celebration of SP's 70th Anniversary!</p>
+                            <p>Since 1971, SPGG has championed initiatives like the SPGG Education Fund, aiding over 1,000 needy SP students. 
+                            Help us raise $350,000 to support students grappling with the cost of living. Every donation, at various levels, 
+                            counts! Plus $50,000 will be donated to the President's Challenge. Register your interest 
+                            <a href = "https://form.gov.sg/661deb4d6130a0f93174b7cbhere!" target = "_blank">here!</a>
+                            </p>
+                        </td>
+                    </tr> 
+                </tbody>
+            </table>
+            </div>
+        </div>
+    </div>
+    <div class = "container-fluid" id = "Quiz-Page-Header">
+    </div>
+    <div class = "container-fluid my-5" id = "Quiz-Page">
+
+        <div class = "modal" id = "Quiz-Modal" style = "z-index: 9999999;">
+            <div class = "modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class = "modal-content">
+                    <div class = "modal-header">
+                        <h1 id = "Quiz-Modal-Header-Error" class = "text-danger"></h1>
+                        <h1 id = "Quiz-Modal-Header-Success" class = "text-success"></h1>
+                        <button type = "button" class = "btn btn-close floar-end" data-bs-dismiss = "modal"></button>
+                    </div>
+                    <div class = "modal-body">
+                        <p id = "Quiz-Modal-Message"></p>
+                    </div>
+                    <div class = "modal-footer">
+                        <button type = "button" class = "btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class = "container-md" id = "Quiz-Page-Inner-Container">
+            <h1 class = "display-1 text-center my-3">It Is Quiz Time!</h1>
+            <ul class = "nav nav-pills nav-justified border border-2">
+                <li class = "nav-item">
+                    <a href = "#Content-Quiz-Page-Intro" class = "nav-link active border-end border-info" data-bs-toggle = "pill">Intro</a>
+                </li>
+                <li class = "nav-item">
+                    <a href = "#Content-Quiz-Page-Q1" class = "nav-link" data-bs-toggle = "pill">Q1</a>
+                </li>
+                <li class = "nav-item">
+                    <a href = "#Content-Quiz-Page-Q2" class = "nav-link" data-bs-toggle = "pill">Q2</a>
+                </li>
+                <li class = "nav-item">
+                    <a href = "#Content-Quiz-Page-Q3" class = "nav-link" data-bs-toggle = "pill">Q3</a>
+                </li>
+                <li class = "nav-item">
+                    <a href = "#Content-Quiz-Page-Q4" class = "nav-link" data-bs-toggle = "pill">Q4</a>
+                </li>
+                <li class = "nav-item">
+                    <a href = "#Content-Quiz-Page-Q5" class = "nav-link" data-bs-toggle = "pill">Q5</a>
+                </li>
+            </ul>
+
+            <div class = "tab-content border border-2 bg-body-tertiary" id = "Content-Quiz-Page-Panes">
+                <div class = "tab-pane container active text-center" id = "Content-Quiz-Page-Intro">
+                    <h1 class = "mt-3">Have You Read All?</h1>
+                    <p>Let's see if you can answer 5 questions regarding this page!</p>
+                    <p>Each question increases in difficulty!</p>
+                    <p>Click on the tab above to navigate to each question!</p>
+                    <button type = "button" class = "btn btn-danger" id = "Content-Quiz-Page-Clear">Reset</button>
+                    <p id = "Content-Quiz-Page-Clear-Message"></p>
+
+                </div>
+
+                <div class = "tab-pane container" id = "Content-Quiz-Page-Q1">
+                    <h3 class = "m-3">Q1) When was Singapore Polytechnic Established?</h3>
+                    <form class = "container m-3">
+                        <div class = "form-check">
+                        <input class = "form-check-input" type = "radio" 
+                        name = "q1-opt" id = "q1-opt-1">
+                        <label class = "form-label">12 October 2010</label>
+                        </div>
+
+                        <div class = "form-check">
+                            <input class = "form-check-input" type = "radio" 
+                            name = "q1-opt" id = "q1-opt-2">
+                            <label class = "form-label">9 August 1965</label>
+                        </div>
+
+                        <div class = "form-check">
+                            <input class = "form-check-input" type = "radio" 
+                            name = "q1-opt" id = "q1-opt-3">
+                            <label class = "form-label">27 September 1954</label>
+                        </div>
+
+                        <div class = "form-check">
+                            <input class = "form-check-input" type = "radio" 
+                            name = "q1-opt" id = "q1-opt-4">
+                            <label class = "form-label">27 October 1954</label>
+                        </div>
+                    </form>
+                </div>
+
+                <div class = "tab-pane container" id = "Content-Quiz-Page-Q2">
+                    <h3 class = "m-3">Q2) What is Singapore Poly's Motto?</h3>
+                    <form class = "container m-3">
+                        <div class = "form-check">
+                        <input class = "form-check-input" type = "radio" 
+                        name = "q2-opt" id = "q2-opt-1">
+                        <label class = "form-label">“to be a master servant”</label>
+                        </div>
+
+                        <div class = "form-check">
+                            <input class = "form-check-input" type = "radio" 
+                            name = "q2-opt" id = "q2-opt-2">
+                            <label class = "form-label">“to serve with mastery”</label>
+                        </div>
+
+                        <div class = "form-check">
+                            <input class = "form-check-input" type = "radio" 
+                            name = "q2-opt" id = "q2-opt-3">
+                            <label class = "form-label">“to serve with skill”</label>
+                        </div>
+
+                        <div class = "form-check">
+                            <input class = "form-check-input" type = "radio" 
+                            name = "q2-opt" id = "q2-opt-4">
+                            <label class = "form-label">"to protect and serve"</label>
+                        </div>
+                    </form>
+
+                </div>
+
+                <div class = "tab-pane container" id = "Content-Quiz-Page-Q3">
+                    <h3 class = "m-3">Q3) What are one of the qualities mentioned about SP?</h3>
+                    <form class = "container m-3">
+                        <div class = "form-check">
+                        <input class = "form-check-input" type = "radio" 
+                        name = "q3-opt" id = "q3-opt-1">
+                        <label class = "form-label">Dilligence</label>
+                        </div>
+
+                        <div class = "form-check">
+                            <input class = "form-check-input" type = "radio" 
+                            name = "q3-opt" id = "q3-opt-2">
+                            <label class = "form-label">Creativity</label>
+                        </div>
+
+                        <div class = "form-check">
+                            <input class = "form-check-input" type = "radio" 
+                            name = "q3-opt" id = "q3-opt-3">
+                            <label class = "form-label">Adaptibility</label>
+                        </div>
+
+                        <div class = "form-check">
+                            <input class = "form-check-input" type = "radio" 
+                            name = "q3-opt" id = "q3-opt-4">
+                            <label class = "form-label">Integrity</label>
+                        </div>
+                    </form>
+                </div>
+
+
+                <div class = "tab-pane container" id = "Content-Quiz-Page-Q4">
+                    <h3 class = "m-3">Q4) Why is golf a good cause in the celebration of SP70?</h3>
+                    <form class = "container m-3">
+                        <div class = "form-check">
+                        <input class = "form-check-input" type = "radio" 
+                        name = "q4-opt" id = "q4-opt-1">
+                        <label class = "form-label">It is very fun to play</label>
+                        </div>
+
+                        <div class = "form-check">
+                            <input class = "form-check-input" type = "radio" 
+                            name = "q4-opt" id = "q4-opt-2">
+                            <label class = "form-label">It promotes health among students in the campus</label>
+                        </div>
+
+                        <div class = "form-check">
+                            <input class = "form-check-input" type = "radio" 
+                            name = "q4-opt" id = "q4-opt-3">
+                            <label class = "form-label">It helps the needy students</label>
+                        </div>
+
+                        <div class = "form-check">
+                            <input class = "form-check-input" type = "radio" 
+                            name = "q4-opt" id = "q4-opt-4">
+                            <label class = "form-label">It helps the school raise funds to help people in poorer countries.</label>
+                        </div>
+                    </form>
+                </div>
+
+                <div class = "tab-pane container" id = "Content-Quiz-Page-Q5">
+                    <h3 class = "m-3">Q5) Is Singapore Polytechnic the best polytechnic?</h3>
+                    <form class = "container m-3">
+                        <div class = "form-check">
+                        <input class = "form-check-input" type = "radio" 
+                        name = "q5-opt" id = "q5-opt-1">
+                        <label class = "form-label">Yes.</label>
+                        </div>
+
+                        <div class = "form-check">
+                            <input class = "form-check-input" type = "radio" 
+                            name = "q5-opt" id = "q5-opt-2">
+                            <label class = "form-label">No. Ngee Ann.</label>
+                        </div>
+
+                        <div class = "form-check">
+                            <input class = "form-check-input" type = "radio" 
+                            name = "q5-opt" id = "q5-opt-3">
+                            <label class = "form-label">No. Nanyang Poly.</label>
+                        </div>
+
+                        <div class = "form-check">
+                            <input class = "form-check-input" type = "radio" 
+                            name = "q5-opt" id = "q5-opt-4">
+                            <label class = "form-label">No. Temasek Poly.</label>
+                        </div>
+                    </form>
+                    <button type = "button" class = "btn btn-success float-end ms-3" id = "Content-Quiz-Page-Submit">Submit</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <hr class = "border-top-5 mt-5">
+
+    <div class = "container-fluid mt-5" id = "SP-News-Page">
+        <div class = "container-md" id = "SP-News-Page-Inner-Container">
+            <h1 class = "display-1 text-center">SP70 In The News</h1>
+            <div class = "row gy-4 my-5">
+                <div class = "col-lg-4 col-md-6 col-sm-12">
+                    <div class = "card h-100 w-100">
+                        <a href = "https://www.sp.edu.sg/sp/news/sp/interview-with-fann-zhi-jie">
+                            <div class = "Content-SP-News-Page-Images-Wrapper">
+                                <img src = "images/images-Index/Content-SP-News-Image1.png" alt = "" class = "Content-SP-News-Page-Images">
+                            </div>                            
+                        </a>
+                        <div class = "card-body bg-body-tertiary">
+                            <div class = "card-text">
+                            <h5>Interview With Fann Zhi Jie</h5>
+                            <p class = "mt-3"><i class="bi bi-calendar me-3"></i>11 Nov 2023</p>
+                            <a href = "https://www.sp.edu.sg/sp/news/sp/interview-with-fann-zhi-jie" 
+                            class = "Singapore-Poly-Red-Text-Link">
+                                > Find Out More
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "col-lg-4 col-md-6 col-sm-12">
+                    <div class = "card h-100 w-100">
+                        <a href = "https://www.sp.edu.sg/sp/news/sp/singapore-polytechnic-celebrating-its-70th-anniversary">
+                            <div class = "Content-SP-News-Page-Images-Wrapper">
+                                <img src = "images/images-Index/Content-SP-News-Image2.jpg" alt = "" class = "Content-SP-News-Page-Images">
+                            </div>                            
+                        </a>
+                        <div class = "card-body bg-body-tertiary">
+                            <div class = "card-text">
+                            <h5>Singapore Polytechnic celebrating its 70th Anniversary</h5>
+                            <p class = "mt-3"><i class="bi bi-calendar me-3"></i>4 Nov 2023</p>
+                            <a href = "https://www.sp.edu.sg/sp/news/sp/singapore-polytechnic-celebrating-its-70th-anniversary" 
+                            class = "Singapore-Poly-Red-Text-Link">
+                                > Find Out More
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "col-lg-4 col-md-6 col-sm-12">
+                    <div class = "card h-100 w-100">
+                        <a href = "https://www.sp.edu.sg/sp/news/sp/singapore-polytechnic-marks-upcoming-70th-anniversary-with-book-documenting-its-journey">
+                            <div class = "Content-SP-News-Page-Images-Wrapper">
+                                <img src = "images/images-Index/Content-SP-News-Image3.jpg" alt = "" class = "Content-SP-News-Page-Images">
+                            </div>                            
+                        </a>
+                        <div class = "card-body bg-body-tertiary">
+                            <div class = "card-text">
+                            <h5>Singapore Polytechnic marks upcoming 70th anniversary with book documenting its journey</h5>
+                            <p class = "mt-3"><i class="bi bi-calendar me-3"></i>31 Oct 2023</p>
+                            <a href = "https://www.sp.edu.sg/sp/news/sp/singapore-polytechnic-marks-upcoming-70th-anniversary-with-book-documenting-its-journey" 
+                            class = "Singapore-Poly-Red-Text-Link">
+                                > Find Out More
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "col-lg-4 col-md-6 col-sm-12">
+                    <div class = "card h-100 w-100">
+                        <a href = "https://www.sp.edu.sg/sp/news/sp/singapore-polytechnic-has-launched-a-new-book-to-celebrate-its-70th-anniversary">
+                            <div class = "Content-SP-News-Page-Images-Wrapper">
+                                <img src = "images/images-Index/Content-SP-News-Image4.jpg" alt = "" class = "Content-SP-News-Page-Images">
+                            </div>                            
+                        </a>
+                        <div class = "card-body bg-body-tertiary">
+                            <div class = "card-text">
+                            <h5>Singapore Polytechnic has launched a new book to celebrate its 40th Anniversary</h5>
+                            <p class = "mt-3"><i class="bi bi-calendar me-3"></i>31 Oct 2023</p>
+                            <a href = "https://www.sp.edu.sg/sp/news/sp/singapore-polytechnic-has-launched-a-new-book-to-celebrate-its-70th-anniversary" 
+                            class = "Singapore-Poly-Red-Text-Link">
+                                > Find Out More
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class = "container-fluid mt-3 mb-0" id = "SP-Anniversary-Countdown-Page">
+        <div class = "container-md text-white p-3" id = "SP-Anniversary-Countdown-Inner-Container">
+            <h1 class = "display-1 text-center mt-5">SP Anniversary Countdown</h1>
+            <h1 class = "text-center text-decoration-underline">How much time left to <span id = "SP-Anniversary-Countdown-Date">27 October 2025?</span></h1>
+            <div class = "row gy-5 mt-1 mb-5">
+                <div class = "col-lg-3 col-md-6 col-sm-12">
+                    <div class = "card w-100 h-100">
+                        <div class = "card-header">
+                            <h1 class = "display-1 card-title text-center text-white p-5" id = "SP-Anniversary-Countdown-Days"></h1>
+                        </div>
+                        <div class = "card-footer">
+                            <h3 class = "card-text text-center">Day(s)</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "col-lg-3 col-md-6 col-sm-12">
+                    <div class = "card w-100 h-100">
+                        <div class = "card-header">
+                            <h1 class = "display-1 card-title text-center text-white p-5" id = "SP-Anniversary-Countdown-Hours"></h1>
+                        </div>
+                        <div class = "card-footer">
+                            <h3 class = "card-text text-center">Hour(s)</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "col-lg-3 col-md-6 col-sm-12">
+                    <div class = "card w-100 h-100">
+                        <div class = "card-header">
+                            <h1 class = "display-1 card-title text-center text-white p-5" id = "SP-Anniversary-Countdown-Minutes"></h1>
+                        </div>
+                        <div class = "card-footer">
+                            <h3 class = "card-text text-center">Minute(s)</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "col-lg-3 col-md-6 col-sm-12">
+                    <div class = "card w-100 h-100">
+                        <div class = "card-header">
+                            <h1 class = "display-1 card-title text-center text-white p-5" id = "SP-Anniversary-Countdown-Seconds"></h1>
+                        </div>
+                        <div class = "card-footer">
+                            <h3 class = "card-text text-center">Second(s)</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "col-12">
+                    <h3 class = "text-center" id = "SP-Anniversary-Countdown-Message">We are getting there...</h3>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class = "container-fluid bg-dark p-5 text-white border-top border-white" id = "Footer">
+        <div class = "container w-75 p-2 mt-2">
+            <div class = "row border-bottom border-light">
+                <div class = "col-lg-4 col-md-6 col-sm-12 p-1 d-flex flex-column justify-content-center">
+                    <img src = "images/images-shared/Navbar-Footer-Singapore-Poly-Brand.png" 
+                    alt = "Singapore Poly Brand"
+                    class = "align-self-center"
+                    id = "Singapore-Poly-Logo-Footer">
+                    <div class = "mt-3 align-self-center">
+                        <p>Singapore Polytechnic</p>
+                        <p>500 Dover Road Singapore 139651</p>
+                    </div>
+                </div>
+
+                <div class = "col-lg-4">
+                </div>
+
+                <div class = "col-lg-4 col-md-6 col-sm-12 p-1 d-flex flex-column justify-content-center align-items-center">
+                    <p class = "p-3">
+                    Follow Us On:
+                    <a href = "https://www.facebook.com/singaporepolytechnic" target = "_blank" class = "bi bi-facebook" id = "footer-facebook-icon"></a>
+                    <a href = "https://www.instagram.com/singaporepoly/" target = "_blank" class = "bi bi-instagram" id = "footer-instagram-icon"></a>
+                    <a href = "https://www.youtube.com/singaporepolytechnic" target = "_blank" class = "bi bi-youtube" id = "footer-youtube-icon"></a>
+                    <a href = "https://sg.linkedin.com/school/singapore-polytechnic/" target = "_blank" class = "bi bi-linkedin" id = "footer-linkedin-icon"></a>
+                    <a href = "https://t.me/SingaporePoly" target = "_blank" class = "bi bi-telegram" id = "footer-telegram-icon"></a>
+                    </p>
+                    
+                    <p class = "p-3">SP App:
+                    <a href = "https://www.sp.edu.sg/sp/about-sp/sp-mobile-apps" 
+                    target  ="_blank"
+                    class = "bi bi-phone-fill" id = "footer-mobile-icon">
+                    </a>
+                    </p>
+                </div>
+            </div>
+
+            <div class = "row mt-3">
+                <div class = "col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+                    <div class = "align-self-center mt-3">
+                        <p>Updated On: 6/7/2024 <span class = "text-white-50">(DD/MM/YY)</span></p>
+                        <p id = "browser-logs">Viewed on: </p>
+                        <p id = "language-logs">Language: </p>
+                        <p id = "date"></p>
+                        <p id = "time"></p>
+                    </div>
+                </div>
+
+                <div class = "col-lg-4 col-md-6 col-sm-12">
+                </div>
+
+                <div class = "col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-end mt-5">
+                    <p>&#169;2024 Singapore Polytechnic</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    </body>
+</html>

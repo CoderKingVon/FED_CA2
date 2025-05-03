@@ -1,0 +1,457 @@
+/*
+==============================
+            Fix 
+==============================
+*/
+/* To Fix Broken Designs if bs5 dont work */
+
+/* Large (Desktops) */
+@media only screen and (min-width: 992px) {
+
+    /* Navbar */
+
+    #Navbar-Bottom-Right {
+        display: flex;
+    }
+
+    /* Body */
+
+    /* Introduction Page */
+    .card > img {
+        aspect-ratio: 16/10;
+        height: 15dvw;
+    }
+
+    /* Landing Page */
+    #Content-Landing-Page_BG-Caption-Title {
+        font-size: 2.5rem;
+    }
+
+    /* History Page*/
+
+    #History-Page .carousel-inner h1 {
+        font-size: 1.5em;
+    }
+
+    #History-Page .carousel-inner p {
+        font-size: 1.25em;
+    }
+
+    /* SP News Page */
+}
+
+/* Medium (Tablets) */
+@media only screen and (768px <= width < 992px) {
+
+    /* Navbar */
+    #Navbar-Bottom-Right {
+        display: flex;
+    }
+
+    /* Body */
+    /* Introduction Page */
+    #Introduction-Page .card > img {
+        aspect-ratio: 16/10;
+        height: 20dvw;
+    }
+
+    /* Landing Page */
+
+    #Content-Landing-Page_BG-Caption-Title {
+        font-size: 2rem;
+    }
+    /* History Page */
+
+    #History-Page .carousel-inner h1 {
+        font-size: 1.25em;
+    }
+
+    #History-Page .carousel-inner p {
+        font-size: 1em;
+    }
+
+    /* SP News Page */
+
+}
+
+/* Small (Mobile) */
+@media only screen and (0px <= width < 768px) {
+
+    /* Navbar */
+
+    #navbar-indicators {
+        display: none;
+    }
+
+    #navbar-sidebar-button {
+        position: fixed;
+        bottom: 1vh;
+        left: 1vw;
+        border-radius: 50%;
+        width: 10dvw;
+        height: 10dvw;
+
+        background-color: rgb(28, 223, 226);
+
+        z-index: 100;
+    }
+
+    #Navbar-Bottom-Right {
+        display: none;
+    }
+
+    /* Body */
+    /* Introduction Page */
+    #Introduction-Page .card > img{
+        aspect-ratio: 16/10;
+        height: 45dvw;
+    }
+
+    /* Landing Page */
+    #Content-Landing-Page_BG-Caption-Title {
+        font-size: 1.3rem;
+    }
+
+    /* Hstory Page */
+
+    #History-Page .carousel-inner h1 {
+        font-size: 1em;
+    }
+
+    #History-Page .carousel-inner p {
+        font-size: 0.75em;
+    }
+
+    /* SP News Page */
+}
+
+/*
+==============================
+            Navbar 
+==============================
+*/
+
+button#caret {
+    border : none;
+    background : none;
+    position: absolute;
+    top: -2px;
+    right: 5px;
+    color: black;
+  }
+  
+.input-wrap {
+    position: relative;
+    display: inline;
+}
+
+#Font-Size-Default, #Font-Size-Large, #Font-Size-Larger, #Font-Size-Default2 , #Font-Size-Large2, #Font-Size-Larger2 {
+    color: white;
+    
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+}
+
+#Font-Size-Default, #Font-Size-Default2 {
+    font-size: 16px;
+}
+
+#Font-Size-Large, #Font-Size-Large2 {
+    font-size: 18px;
+}
+
+#Font-Size-Larger, #Font-Size-Larger2 {
+    font-size: 20px;
+}
+
+#Font-Size-Default, #Font-Size-Default2, #Font-Size-Default:hover, #Font-Size-Large:hover, #Font-Size-Larger:hover, 
+#Font-Size-Default2:hover , #Font-Size-Large2:hover, #Font-Size-Larger2:hover{
+    color: #d8394e;
+}
+
+#Navbar-Bottom-Right {
+    position: fixed;
+
+    flex-direction: column;
+    justify-content: space-between;
+    height: 27dvh;
+
+    z-index: 9999;
+    bottom: 3dvh;
+    right: 2dvw;
+
+}
+
+.Navbar-Bottom-Right-Icons:hover {
+    filter: brightness(120%);
+    transform: skew(2deg);
+}
+
+#Navbar-Bottom-Right a {
+    justify-content: center;
+    align-items: center;
+    height: 8dvh;
+    width: 8dvh;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+#Navbar-Bottom-Right a img {
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+
+    height: 8dvh;
+}
+
+#navbar-indicators a {
+    font-size: 110%;
+}
+
+/* Will change to display flex if scroll past a certain value (1000px) and if on mobile*/
+#Scroll-Button-Top {
+    display: none;
+    position: fixed;
+    bottom: 1dvh;
+    right: 2dvw;
+
+    z-index: 9999;
+
+    height: 6dvh;
+    width: 6dvh;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: red;
+    font-size: 2em;
+}
+
+#Scroll-Button-Top:hover {
+    background-color: rgba(255, 51, 0, 0.615);
+}
+
+/*
+==============================
+            Body 
+==============================
+*/
+
+/* Landing Page */
+#super {
+    position: relative;
+    font-family: cursive;
+    left: -1.5%;
+    bottom: 0.5rem;
+    font-size: 80%;
+}
+
+#Content-Landing-Page-Title-Red {
+    color: rgb(249, 52, 52);
+}
+
+/* Introduction Page */
+#Introduction-Page .card .card-header {
+    background-color: rgb(249, 52, 52);
+    color: white;
+}
+
+/* History Page */
+#Content-History-Page-New_Sp {
+
+    filter: brightness(80%);
+    aspect-ratio: 16/10;
+}
+  
+#Content-History-Page-Old_Sp {
+    aspect-ratio: 16/10;
+}
+
+/* For All Ages */
+
+#Content-For-All-Ages-SP_Book-Video {
+    aspect-ratio: 16/10;
+}
+
+#For-All-Ages2 img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16/10;
+}
+
+/* Celebration Page */
+
+#Content-Celebration-Page-BG-Title_Red {
+    color: rgb(249, 52, 52);
+}
+
+@keyframes typingEffect {
+    from {
+        color: white;
+    } to {
+        color: transparent;
+    }
+}
+#Content-Celebration-Page-BG-Title::after {
+    content: "|";
+    animation-name: typingEffect;
+    animation-delay: 1.9s;
+    animation-duration: 0.75s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    vertical-align: text-top;
+}
+
+#Singapore-Poly-Red-Text {
+    color:rgb(249, 52, 52);
+}
+
+#Content-Celebration-Page2-Table-Info {
+    vertical-align: middle;
+}
+
+table , tr, td , thead, tbody, th {
+    border-style: solid;
+    border-width: 2px;
+}
+
+th {
+    font-size: x-large;
+}
+
+#Content-Celebration-Page2-Table-Map-Icon {
+    color: green;
+    font-size: 20px;
+}
+
+#Content-Celebration-Page2-Table-Map-Icon:hover {
+    color: rgb(54, 198, 54);
+}
+
+/* Quiz Page */
+#Content-Quiz-Page-Panes {
+    display: flex;
+    min-height: 50vh;
+}
+
+#Content-Quiz-Page-Panes input {
+    border-style: solid;
+    border-width: 3px;
+}
+
+/* SP News Page */
+
+.Content-SP-News-Page-Images-Wrapper {
+    display: block;
+    overflow: hidden;
+    
+    border: 1px solid gray;
+}
+
+.Content-SP-News-Page-Images-Wrapper .Content-SP-News-Page-Images {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transition: all .2s ease;
+}
+
+.Content-SP-News-Page-Images-Wrapper .Content-SP-News-Page-Images:hover {
+    transform: scale(1.25);
+}
+
+.Singapore-Poly-Red-Text-Link {
+    font-size: 80%;
+    color: rgb(249, 52, 52);
+    text-decoration: none;
+}
+
+.Singapore-Poly-Red-Text-Link:hover {
+    text-decoration: underline;
+}
+
+/* SP Anniversary Page */
+
+#SP-Anniversary-Countdown-Inner-Container div.card.w-100.h-100 > div.card-header {
+    background-color: rgb(249, 52, 52);
+}
+
+#SP-Anniversary-Countdown-Inner-Container span {
+    color: rgb(249, 52, 52);
+    text-shadow: black 2px 2px 10px;
+}
+
+/*
+==============================
+            Footer 
+==============================
+*/
+#Singapore-Poly-Logo-Footer {
+    height: 60px;
+}
+
+#Footer {
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#footer-facebook-icon {
+    color: white;
+    text-decoration: none;
+}
+#footer-facebook-icon:hover {
+    color: #1877F2;
+    text-shadow: 0.5px 0.5px 20px #1877F2;;
+}
+
+
+#footer-instagram-icon {
+    background-size: cover;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+#footer-instagram-icon:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    text-shadow: 0.5px 0.5px 20px #d6249f;
+}
+
+#footer-youtube-icon {
+    color: white;
+    text-decoration: none;
+}
+#footer-youtube-icon:hover {
+    color: #b2071d;
+    text-shadow: 0.5px 0.5px 20px #b2071d;
+}
+
+
+#footer-linkedin-icon {
+    color: white;
+    text-decoration: none;
+}
+#footer-linkedin-icon:hover {
+    color: #0072b1;
+    text-shadow: 0.5px 0.5px 20px #0072b1;
+}
+
+
+#footer-telegram-icon {
+    color: white;
+    text-decoration: none;
+}
+#footer-telegram-icon:hover {
+    color: #24A1DE;
+    text-shadow: 0.5px 0.5px 20px #24A1DE;
+}
+
+
+#footer-mobile-icon {
+    color: white;
+    text-decoration: none;
+}
+#footer-mobile-icon:hover {
+    color: grey;
+}

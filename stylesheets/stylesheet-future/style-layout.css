@@ -1,0 +1,180 @@
+/*
+==============================
+            Fix 
+==============================
+*/
+/* To Fix Broken Designs if bs5 dont work */
+
+/* Large (Desktops) */
+@media only screen and (min-width: 992px) {
+
+    /* Navbar */
+    /* Navbar Container */
+    #navbar-container {
+        border-bottom-style: solid;
+        border-color: white;
+        border-width: 2px;
+    }
+
+    /* Body */
+    #Landing-Page-BG {
+        height: 50dvw;
+    }
+
+    #Landing-Page-Inner-Container {
+        width: 75%;
+    }
+
+    /* Future Plan */
+
+    #Future-Plan-Inner-Container-2-2 {
+        width: 75%;
+    }
+
+    /* SP News */
+    #SP-News-Page-Inner-Container {
+        width: 75%;
+    }
+
+}
+
+/* Medium (Tablets) */
+@media only screen and (768px <= width < 992px) {
+
+    /* Navbar */
+    /* Navbar Container */
+    #navbar-container {
+        border-bottom-style: solid;
+        border-color: white;
+        border-width: 2px;
+    }
+
+    /* Body */
+
+    /* Landing Page*/
+    #Landing-Page-BG {
+        height: 60dvw;
+    }
+
+    #Landing-Page-Inner-Container {
+        width: 75%;
+    }
+
+    /* Future Plan */
+
+    #Future-Plan-Inner-Container {
+        width: 75%;
+    }
+
+    #Future-Plan-Inner-Container-2-2 {
+        width: 75%;
+    }
+
+    /* SP News */
+    #SP-News-Page-Inner-Container {
+        width: 75%;
+    }
+    
+
+}
+
+/* Small (Mobile) */
+@media only screen and (0px <= width < 768px) {
+
+    /* Navbar */
+    /* Navbar Container */
+    #navbar-container {
+        border-bottom-style: none;
+    }
+
+    /* Body */
+
+    /* Landing Page */
+    #Landing-Page-BG {
+        height: 90dvh;
+    }
+
+    #Landing-Page-Inner-Container {
+        width: 100%;
+    }
+
+    /* Future Plan */
+
+    #Future-Plan-Inner-Container {
+        width: 100%;
+    }
+
+    #Future-Plan-Inner-Container-2-2 {
+        width: 100%;
+    }
+
+    /* SP News */
+    #SP-News-Page-Inner-Container {
+        width: 100%;
+    }
+    
+}
+
+
+/* Body */
+/* Fix the scrolling offset with the fixed navbar accounted for */
+html {
+    scroll-padding-top: 70px;
+}
+
+/* Landing Page */
+#Landing-Page-BG {
+
+    background-image: linear-gradient(45deg, rgba(88, 86, 86, 0.296),rgba(75, 73, 73, 0.466)),
+    url("../../images/images-future/Content-Landing-Page-BG.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Future Plan Page */
+#Future-Plan-Header {
+    background-image: linear-gradient(45deg, rgba(45, 42, 42, 0.399), rgba(38, 37, 37, 0.453)),
+    url("../../images/images-future/Content-Future-Plans-Header.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    height: 40dvh;
+
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: grey;
+}
+
+#Future-Plan-Header2 {
+    background-image: linear-gradient(45deg, rgba(45, 42, 42, 0.399), rgba(38, 37, 37, 0.453)),
+    url("../../images/images-future/Content-Future-Plans-Page2-Header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    height: 40dvh;
+
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: grey;
+}
+
+#Future-Plan-Header3 {
+    background-image: linear-gradient(45deg, rgba(45, 42, 42, 0.534), rgba(38, 37, 37, 0.655)),
+    url("../../images/images-future/Content-Future-Plans-Page3-Header.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    height: 40dvh;
+
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: grey;
+}
