@@ -11,13 +11,40 @@ import {
 function setFontSize(size) {
     let fontSizeValue;
     switch (size) {
-        case "default": fontSizeValue = "1rem"; break;
-        case "large": fontSizeValue = "1.25rem"; break;
-        case "larger": fontSizeValue = "1.5rem"; break;
+        case "default": {
+            fontSizeValue = "1rem";
+            break;
+        }
+        case "large": {
+            fontSizeValue = "1.25rem"; 
+            break;
+        }
+        case "larger": {
+            fontSizeValue = "1.5rem"; 
+            break;
+        }
     }
     document.body.style.fontSize = fontSizeValue;
+    highlightFontSizeButtons(size);
     localStorage.setItem("fontSize", size);
 }
+
+function highlightFontSizeButtons(size) {
+    const allButtons = [
+        [fontsizeDefaultBtn, "default"],
+        [fontsizeLargeBtn, "large"],
+        [fontsizeLargerBtn, "larger"],
+        [fontsizeDefaultBtn2, "default"],
+        [fontsizeLargeBtn2, "large"],
+        [fontsizeLargerBtn2, "larger"]
+    ];
+
+    for (const [btn, btnSize] of allButtons) {
+        if (!btn) continue;
+        btn.style.color = (btnSize === size) ? "#d8394e" : "white";
+    }
+}
+
 
 // Attach event listeners if buttons exist
 fontsizeDefaultBtn?.addEventListener("click", () => setFontSize("default"));
