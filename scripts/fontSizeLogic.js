@@ -6,7 +6,7 @@ import {
   fontsizeDefaultBtn2,
   fontsizeLargeBtn2,
   fontsizeLargerBtn2
-} from './commonElements.js';
+} from './sharedElements.js';
 
 function setFontSize(size) {
     let fontSizeValue;
