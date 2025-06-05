@@ -24,13 +24,14 @@ searchKeywordInput.addEventListener("keypress", function(e) {
     }
 });
 
-const fontsizeDefaultBtn = document.getElementById("Font-Size-Default");
-const fontsizeLargeBtn = document.getElementById("Font-Size-Large");
-const fontsizeLargerBtn = document.getElementById("Font-Size-Larger");
-
-const fontsizeDefaultBtn2 = document.getElementById("Font-Size-Default2");
-const fontsizeLargeBtn2 = document.getElementById("Font-Size-Large2");
-const fontsizeLargerBtn2 = document.getElementById("Font-Size-Larger2");
+import {
+  fontsizeDefaultBtn,
+  fontsizeLargeBtn,
+  fontsizeLargerBtn,
+  fontsizeDefaultBtn2,
+  fontsizeLargeBtn2,
+  fontsizeLargerBtn2
+} from "./sharedElements.js";
 
 // Desktop and Tablet Version
 fontsizeDefaultBtn.addEventListener("click", function() {changeFontSize("default")});
