@@ -1,5 +1,6 @@
 // fontSizeLogic.js
 import {
+  allPElements,
   fontsizeDefaultBtn,
   fontsizeLargeBtn,
   fontsizeLargerBtn,

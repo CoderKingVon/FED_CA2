@@ -155,47 +155,6 @@ function scrollTopButton_Activate() {
 */
 const allPElements = document.body.getElementsByTagName("p");
 
-function changeFontSize(size) {
-    if (size == 'default') {
-        for (let i = 0; i < allPElements.length; i++) {
-            allPElements[i].style.fontSize = "100%";
-
-            fontsizeDefaultBtn.style.color = "#d8394e";
-            fontsizeLargeBtn.style.color = "white";
-            fontsizeLargerBtn.style.color = "white";
-
-            fontsizeDefaultBtn2.style.color = "#d8394e";
-            fontsizeLargeBtn2.style.color = "white";
-            fontsizeLargerBtn2.style.color = "white";
-
-        }
-    } else if (size == 'large') {
-        for (let i = 0; i < allPElements.length; i++) {
-            allPElements[i].style.fontSize = "105%";
-
-            fontsizeDefaultBtn.style.color = "white";
-            fontsizeLargeBtn.style.color = "#d8394e";
-            fontsizeLargerBtn.style.color = "white";
-
-            fontsizeDefaultBtn2.style.color = "white";
-            fontsizeLargeBtn2.style.color = "#d8394e";
-            fontsizeLargerBtn2.style.color = "white";
-        }        
-    } else if (size == 'larger') {
-        for (let i = 0; i < allPElements.length; i++) {
-            allPElements[i].style.fontSize = "110%";
-
-            fontsizeDefaultBtn.style.color = "white";
-            fontsizeLargeBtn.style.color = "white";
-            fontsizeLargerBtn.style.color = "#d8394e";
-
-            fontsizeDefaultBtn2.style.color = "white";
-            fontsizeLargeBtn2.style.color = "white";
-            fontsizeLargerBtn2.style.color = "#d8394e";
-        }
-    }
-}
-
 /* Body */
 
 /* Form */

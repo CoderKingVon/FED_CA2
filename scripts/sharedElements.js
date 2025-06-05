@@ -1,5 +1,7 @@
 // Font Buttons
 
+export const allPElements = document.body.getElementsByTagName("p");
+
 export const fontsizeDefaultBtn = document.getElementById("Font-Size-Default");
 export const fontsizeLargeBtn = document.getElementById("Font-Size-Large");
 export const fontsizeLargerBtn = document.getElementById("Font-Size-Larger");
