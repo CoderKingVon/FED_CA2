@@ -25,7 +25,7 @@ function setFontSize(size) {
             break;
         }
     }
-    document.body.style.fontSize = fontSizeValue;
+    allPElements.style.fontSize = fontSizeValue;
     localStorage.setItem("fontSize", size);
     highlightFontSizeButtons(size);
 
