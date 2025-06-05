@@ -17,11 +17,11 @@ function setFontSize(size) {
             break;
         }
         case "large": {
-            fontSizeValue = "1.25rem"; 
+            fontSizeValue = "1.05rem"; 
             break;
         }
         case "larger": {
-            fontSizeValue = "1.5rem"; 
+            fontSizeValue = "1.1rem"; 
             break;
         }
     }
