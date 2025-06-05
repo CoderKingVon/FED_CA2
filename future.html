@@ -12,7 +12,21 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">        
         <link rel = "stylesheet" href = "stylesheets/stylesheet-future/style-content.css">
         <link rel = "stylesheet" href = "stylesheets/stylesheet-future/style-layout.css">
-        <script defer src = "scripts/script-future.js"></script>
+        
+        <!--Logic -->
+        <script type="module" src="scripts/logic/fontSize.js"></script>
+        <script type="module" src="scripts/logic/darkMode.js"></script>
+        <script type="module" src="scripts/logic/scrollButton.js"></script>
+        <script type="module" src="scripts/logic/footerClock.js"></script>
+        <script type="module" src="scripts/logic/browserInfo.js"></script>
+        <script type = "module" src = "scripts/logic/seachPage.js"></script>
+
+        <script>
+            window.keywordsList = ["Introduction-Page", "Future-Plan","Future-Plan2", "SP-News-Page", "Sharing-Page"];
+        </script>
+        
+        <!--Website Specific Scripts-->
+        <script defer src = "scripts/website/script-future.js"></script>
 
         <!--Website title-->
         <title>SP 70 | Future Plans</title>
@@ -177,13 +191,29 @@
                 <h6 class = "mt-2 mb-4">Navigation</h6>
                 <ul class = "nav nav-tabs d-flex flex-column gap-2 mt-2 border-0">
                     <li class = "nav-item">
-                        <a href = "index.html" class = "nav-link text-bg-dark">Anniversary</a>
+                        <a href = "index.html" class = "nav-link text-bg-dark">
+                            <img src = "images/images-shared/Navbar-Bottom-Right-Anniversary.png" 
+                            class = "img-fluid rounded"
+                            style= "width: 64px; height: 64px"
+                            alt = "icon">
+                            Anniversary
+                        </a>
                     </li>
                     <li class = "nav-item">
-                        <a href = "future.html" class = "nav-link active text-bg-dark">Future</a>
+                        <a href = "future.html" class = "nav-link active text-bg-dark">
+                            <img src = "images/images-shared/Navbar-Bottom-Right-Future.jpg" 
+                            class = "img-fluid rounded"
+                            style= "width: 64px; height: 64px"
+                            alt = "icon"> Future
+                        </a>
                     </li>
                     <li class = "nav-item">
-                        <a href = "wishes.html" class = "nav-link text-bg-dark">Wishes</a>
+                        <a href = "wishes.html" class = "nav-link text-bg-dark">
+                            <img src = "images/images-shared/Navbar-Bottom-Right-Wishes.png" 
+                            class = "img-fluid rounded"
+                            style= "width: 64px; height: 64px"
+                            alt = "icon"> Wishes
+                        </a>
                     </li>
                 </ul>
             </div>

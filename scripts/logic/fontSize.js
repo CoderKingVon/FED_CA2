@@ -1,4 +1,4 @@
-// fontSizeLogic.js
+// fontSize.js
 import {
   allPElements,
   fontsizeDefaultBtn,
@@ -7,7 +7,7 @@ import {
   fontsizeDefaultBtn2,
   fontsizeLargeBtn2,
   fontsizeLargerBtn2
-} from './sharedElements.js';
+} from '../sharedElements.js';
 
 function setFontSize(size) {
     let fontSizeValue;

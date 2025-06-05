@@ -6,47 +6,19 @@
 =====================
 */
 const body = document.getElementById("body");
-/* NavBar */
-const darkModeSwitchInfo = document.getElementById("darkModeSwitchInfo");
-const darkModeSwitch = document.getElementById("darkModeSwitch");
 
-darkModeSwitch.addEventListener("change", darkModeToggle);
 
-const searchButton = document.getElementById("Navbar-Keyword-Search-Button");
-searchButton.addEventListener("click", searchKeywords);
+// FUNCTIONS SECTION
 
-const searchKeywordInput = document.getElementById("userSearchInput");
-// Keypress event checks when a user enters any key, in the function will 
-// validate if the user input Enter key
-searchKeywordInput.addEventListener("keypress", function(e) {
-    if (e.key == "Enter") {
-        searchKeywords();
-    }
-});
-
-const fontsizeDefaultBtn = document.getElementById("Font-Size-Default");
-const fontsizeLargeBtn = document.getElementById("Font-Size-Large");
-const fontsizeLargerBtn = document.getElementById("Font-Size-Larger");
-
-const fontsizeDefaultBtn2 = document.getElementById("Font-Size-Default2");
-const fontsizeLargeBtn2 = document.getElementById("Font-Size-Large2");
-const fontsizeLargerBtn2 = document.getElementById("Font-Size-Larger2");
-
-const scrollTopButton = document.getElementById("Scroll-Button-Top");
-addEventListener("scroll", scrollTopButton_Show);
-scrollTopButton.addEventListener("click", scrollTopButton_Activate);
-
-// Desktop and Tablet Version
-fontsizeDefaultBtn.addEventListener("click", function() {changeFontSize("default")});
-fontsizeLargeBtn.addEventListener("click", function() {changeFontSize("large")});
-fontsizeLargerBtn.addEventListener("click", function() {changeFontSize("larger")});
-
-// Mobile Version
-fontsizeDefaultBtn2.addEventListener("click", function() {changeFontSize("default")});
-fontsizeLargeBtn2.addEventListener("click", function() {changeFontSize("large")});
-fontsizeLargerBtn2.addEventListener("click", function() {changeFontSize("larger")});
+/* 
+=======================================================================
+    Collections of element with <p> tag that needs font size change
+=======================================================================
+*/
+/* Body */
 
 /* Form */
+// DECLARATION OF ELEMENTS
 const formsPage = document.getElementById("Forms-Page");
 const wishes_Form = document.getElementById("Wishes-Form");
 
@@ -65,99 +37,10 @@ const ageSliderOutput = document.getElementById("age-count");
 
 ageSliderInput.addEventListener("input", updateTextInput);
 
-const allRegions = ["Central-Region", "North-Region", "North-East-Region", 
-    "East-Region", "West-Region"];
-
 const allFormsInput = wishes_Form.getElementsByTagName("input");
 const formsMessageTextarea = document.getElementById("message");
 
-
-/* TOS */
-const TOSPage = document.getElementById("Terms-Of-Service-Page");
-
-/* 
-=====================
-        Footer 
-=====================
-*/
-
-const footer_browser_info = document.getElementById("browser-logs");
-const footer_language_info = document.getElementById("language-logs");
-const footer_date = document.getElementById("date");
-const footer_time = document.getElementById("time");
-
-addEventListener("DOMContentLoaded", browserInfo);
-const runfooter_Clock = setInterval(footer_Clock,1000);
-
-
 // FUNCTIONS SECTION
-// NavBar
-
-// Dark Mode
-function darkModeToggle() {
-    if (darkModeSwitch.checked) {
-        darkModeSwitchInfo.textContent = "Dark Mode";
-        body.setAttribute("data-bs-theme", "dark");
-        localStorage.setItem("theme", "dark");
-    } else {
-        darkModeSwitchInfo.textContent = "Light Mode";
-        body.setAttribute("data-bs-theme", "light");
-        localStorage.setItem("theme", "light");
-    }
-}
-
-window.addEventListener("DOMContentLoaded", () => {
-    const savedTheme = localStorage.getItem("theme");
-
-    if (savedTheme === "dark") {
-        darkModeSwitch.checked = true;
-        darkModeSwitchInfo.textContent = "Dark Mode";
-        body.setAttribute("data-bs-theme", "dark");
-    } else {
-        darkModeSwitch.checked = false;
-        darkModeSwitchInfo.textContent = "Light Mode";
-        body.setAttribute("data-bs-theme", "light");
-    }
-});
-
-const keywordsList = ["Forms-Page", "Terms-Of-Service-Page"];
-
-function searchKeywords() {
-    let input = searchKeywordInput.value;
-    if (keywordsList.includes(input)) {
-        window.location.href = "#" + input;
-    } else {
-        alert("The keyword is not in the list!");
-    }
-}
-
-function scrollTopButton_Show() {
-    let scrollHeight = window.scrollY;
-    let innerWidth = window.innerWidth;
-
-    if (scrollHeight > 200 && innerWidth < 768) {
-        scrollTopButton.style.display = "flex";
-    } else {
-        scrollTopButton.style.display = "none";
-    }
-}
-
-function scrollTopButton_Activate() {
-
-    document.body.scrollTop = 0
-    document.documentElement.scrollTop = 0;
-}
-
-/* 
-=======================================================================
-    Collections of element with <p> tag that needs font size change
-=======================================================================
-*/
-const allPElements = document.body.getElementsByTagName("p");
-
-/* Body */
-
-/* Form */
 
 function updateTextInput() {
     ageSliderOutput.textContent = ageSliderInput.value;
@@ -172,6 +55,9 @@ function validateForm(event) {
 function validateFormHelper(event) {
     // Reset Message
     Wishes_Modal_Message.textContent = "";
+
+    const allRegions = ["Central-Region", "North-Region", "North-East-Region", 
+    "East-Region", "West-Region"];
 
     let isValid = true;
     const errorMessage = [];
@@ -288,40 +174,4 @@ function validateFormHelper(event) {
 
     }
 
-}
-/* 
-=====================
-        Footer 
-=====================
-*/
-
-function browserInfo() {
-    let browser = navigator.userAgent.toLowerCase();
-    if (browser.includes("firefox")) {
-        footer_browser_info.textContent += "Firefox";
-    } else if (browser.includes("safari") 
-        && !(browser.includes("chrome") || browser.includes("chromium"))) {
-        footer_browser_info.textContent += "safari";
-    } else if (browser.includes("opr") || browser.includes("opera")) {
-        footer_browser_info.textContent += "Opera";
-    } else if (browser.includes("chrome") 
-        && !(browser.includes("chromium") || browser.includes("edg"))) {
-        footer_browser_info.textContent += "Chrome";
-    } else {
-        footer_browser_info.textContent += "Unknown";
-    }
-
-    footer_language_info.textContent += navigator.language;
-}
-
-function footer_Clock() {
-    const date = new Date();
-
-    let resultDate = "Date: ";
-    let resultTime = "Time: ";
-
-    resultDate += " " + date.toDateString();
-    footer_date.textContent = resultDate;
-    resultTime += " " + date.toLocaleTimeString();
-    footer_time.textContent = resultTime;
 }
